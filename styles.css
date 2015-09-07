@@ -44,7 +44,7 @@ a img{
   color: rgba(0, 0, 0, 0.87);
 }
 
-.android-header .mdl-menu__container {
+.cyclop-header .mdl-menu__container {
   z-index: 50;
   margin: 0 !important;
 }
@@ -68,28 +68,27 @@ a img{
 }
 
 
-.android-logo-image {
-  height: 28px;
-  width: 140px;
+.cyclop-logo-image {
+  height: 60px;
+  width: 300px;
 }
 
 
-.android-header {
+.cyclop-header {
   overflow: visible;
-  background-color: white;
 }
 
-  .android-header .material-icons {
+  .cyclop-header .material-icons {
     color: #767777 !important;
   }
 
-  .android-header .mdl-layout__drawer-button {
+  .cyclop-header .mdl-layout__drawer-button {
     background: transparent;
-    color: #767777;
+    color: #000000;
   }
 
-  .android-header .mdl-navigation__link {
-    color: #757575;
+  .cyclop-header .mdl-navigation__link {
+    color: #000000;
     font-weight: 700;
     font-size: 14px;
   }
@@ -174,14 +173,17 @@ a img{
 
   .android-drawer .mdl-layout-title {
     position: relative;
-    background: #6ab344;
+    background: #8DAA5D;
     height: 160px;
   }
 
-    .android-drawer .android-logo-image {
+    .android-drawer .cyclop-logo-image {
       position: absolute;
-      bottom: 16px;
-    }
+	  top: 5px;
+	  bottom: 5px;
+	  height: 150px;
+	  width: 150px;
+  }
 
 .android-be-together-section {
   position: relative;
@@ -483,7 +485,7 @@ a img{
     display: none;
   }
 
-  .android-title {
+  .cyclop-title {
     display: none !important;
   }
 
