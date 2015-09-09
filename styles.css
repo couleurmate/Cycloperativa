@@ -15,15 +15,14 @@
  */
 
 @font-face {
-  font-family: 'And Black'
-  src: url('myfont-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/and_black.woff') format('woff'),
-       url('fonts/and_black.ttf') format('truetype');
-  font-family: 'Wadim'
-  src: url('fonts/wadim_giant.ttf') format('truetype'),
-       url('fonts/wadim_giant_italic.ttf') format('truetype'),
-       url('fonts/wadim_giant_lines.ttf') format('truetype'),
-       url('fonts/wadim_giant_outline.ttf') format('truetype');
+  font-family: 'Geo', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Wadim', sans-serif;
+  src: local('Wadim Giant')
+      url('wadim_giant.ttf') format('truetype'),
+      url('fonts/wadim_giant_italic.ttf') format('truetype'),
+      url('fonts/wadim_giant_lines.ttf') format('truetype'),
+      url('fonts/wadim_giant_outline.ttf') format('truetype');
 }
 
 body {
@@ -75,13 +74,15 @@ a img{
 
 .cyclop-title {
   display: block !important;
-  font-family: 'Wadim', 'Impact', 'Arial', sans-serif;
+  font-family: 'Wadim', 'Geo', 'Impact', sans-serif;
+  text-align: center;
   color: #ffffff;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 40px;
-  text-shadow: 2px 2px #93311f;
+  text-shadow: 3px 3px #93311f;
   background-color: #a5bc7e;
-  padding: 2px 6px 2px 6px;
+  width: 280px;
+  box-shadow: 4px 4px #7f9b4e;
 }
 
 .cyclop-header {
@@ -99,10 +100,11 @@ a img{
   }
 
   .cyclop-header .mdl-navigation__link {
+    font-family: 'Geo', 'Impact', 'Wadim', sans-serif;
     color: #ffffff;
     font-weight: 700;
-    font-size: 14px;
-    text-shadow: 2px 2px #93311f;
+    font-size: 20px;
+    text-shadow: 3px 3px #93311f;
   }
 
   .cyclop-navigation-container {
@@ -170,7 +172,7 @@ a img{
 
   .cyclop-drawer-separator {
     height: 1px;
-    background-color: #dcdcdc;
+    background-color: #f26522;
     margin: 8px 0;
   }
 
@@ -209,7 +211,7 @@ a img{
 }
 
 .cyclop-font {
-  font-family: 'And Black', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Nunito', 'Helvetica', 'Arial', sans-serif;
   line-height: 1;
   color: #618834;
   font-weight: 300;
@@ -227,7 +229,8 @@ a img{
 
 .asbl-info {
   font-size: 21px;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
   .asbl-info a {
@@ -236,25 +239,27 @@ a img{
     font-weight: 300;
   }
 
-.cyclop-screen-section {
+.cyclop-asbl-section {
   position: relative;
   background-color: #a5bc7e;
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 80px;
 }
 
-.cyclop-screens {
-  text-align: right;
+.cyclop-asbl {
+  text-align: center;
   width: 100%;
   white-space: nowrap;
-  overflow-x: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-top: 10px;
 }
 
-.cyclop-screen {
+.cyclop-asbl {
   text-align: center;
 }
 
-.cyclop-screen .cyclop-link {
+.cyclop-asbl .cyclop-link {
   margin-top: 16px;
   display: block;
   z-index: 2;
@@ -264,27 +269,32 @@ a img{
   text-decoration: none;
 }
 
-.cyclop-wear {
+.cyclop-atelier {
   display: inline-block;
-  width: 160px;
-  margin-right: 32px;
+  width: 300px;
+  margin-right: 5px;
 }
 
-  .cyclop-wear .cyclop-screen-image {
-    width: 40%;
+  .cyclop-atelier .cyclop-asbl-image {
+    width: 50%;
     z-index: 1;
+    border-radius: 25px 25px 25px 25px;
+    background: #ffffff;
   }
 
 
-.cyclop-phone {
+.cyclop-velo {
   display: inline-block;
-  width: 64px;
-  margin-right: 48px;
+  width: 300px;
+  margin-right: 5px;
 }
 
-  .cyclop-phone .cyclop-screen-image {
-    width: 100%;
+  .cyclop-velo .cyclop-asbl-image {
+    width: 35%;
     z-index: 1;
+    padding: 10px;
+    border-radius: 25px 25px 25px 25px;
+    background: #ffffff;
   }
 
 
@@ -294,9 +304,11 @@ a img{
   margin-right: 64px;
 }
 
-  .cyclop-tablet .cyclop-screen-image {
+  .cyclop-tablet .cyclop-asbl-image {
     width: 100%;
     z-index: 1;
+    border-radius: 25px 25px 25px 25px;
+    background: #ffffff;
   }
 
   .cyclop-tablet .cyclop-link {
@@ -305,39 +317,46 @@ a img{
   }
 
 
-.cyclop-tv {
+.cyclop-bier {
   display: inline-block;
   width: 300px;
-  margin-right: 80px;
+  margin-right: 5px;
 }
 
-  .cyclop-tv .cyclop-screen-image {
-    width: 100%;
+  .cyclop-bier .cyclop-asbl-image {
+    width: 45%;
     z-index: 1;
+    padding: 10px;
+    border-radius: 25px 25px 25px 25px;
+    background: #ffffff;
   }
 
 
-.cyclop-auto {
+.cyclop-equipe {
   display: inline-block;
   width: 300px;
-  overflow: hidden;
+  margin-right: 5px;
 }
 
-  .cyclop-auto .cyclop-screen-image {
-    display: block;
-    height: 300px;
+  .cyclop-equipe .cyclop-asbl-image {
+    width: 45%;
     z-index: 1;
+    padding: 10px;
+    border-radius: 25px 25px 25px 25px;
+    background: #ffffff;
   }
 
 
-.cyclop-wear-section {
+.cyclop-atelier-section {
   position: relative;
-  background: url('images/wear.png') center top no-repeat;
-  background-size: cover;
-  height: 800px;
+  background: url('images/brux.png') center top no-repeat;
+  padding: 25px 0px 25px 0;
+  background-color: #ffffff;
+  background-size: contain;
+  height: 600px;
 }
 
-.cyclop-wear-band {
+.cyclop-atelier-band {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -345,7 +364,7 @@ a img{
   background-color: #37474f;
 }
 
-.cyclop-wear-band-text {
+.cyclop-atelier-band-text {
   max-width: 800px;
   margin-left: 25%;
   padding: 24px;
@@ -353,17 +372,17 @@ a img{
   color: white;
 }
 
-  .cyclop-wear-band-text p {
+  .cyclop-atelier-band-text p {
     padding-top: 8px;
   }
 
 .cyclop-link {
   text-decoration: none;
-  color: #8bc34a !important;
+  color: #ffffff !important;
 }
 
   .cyclop-link:hover {
-    color: #7cb342 !important;
+    color: #f26522 !important;
   }
 
   .cyclop-link .material-icons {
@@ -464,7 +483,7 @@ a img{
 }
 
   .cyclop-footer a:hover {
-    color: #8bc34a;
+    color: #f26522;
   }
 
   .cyclop-footer .mdl-mega-footer--top-section::after {
@@ -527,7 +546,7 @@ a img{
 
   .cyclop-title {
     display: none !important;
-    font-family: 'Charcoal', 'Impact', 'Arial', sans-serif;
+    font-family: 'Impact', 'Charcoal', 'Arial', sans-serif;
   }
 
   .cyclop-mobile-title {
@@ -584,7 +603,7 @@ a img{
     display: none;
   }
 
-  .cyclop-wear-band-text {
+  .cyclop-atelier-band-text {
     margin-left: 0;
     padding: 16px;
   }
