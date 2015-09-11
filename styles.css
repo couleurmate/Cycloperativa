@@ -35,12 +35,12 @@ a img{
 }
 
 ::-moz-selection {
-  background-color: #6ab344;
+  background-color: #f26522;
   color: #fff;
 }
 
 ::selection {
-  background-color: #6ab344;
+  background-color: #f26522;
   color: #fff;
 }
 
@@ -58,19 +58,9 @@ a img{
   width: auto;
 }
 
-.cyclop-fab {
-  position: absolute;
-  right: 20%;
-  bottom: -26px;
-  z-index: 3;
-  background: #64ffda !important;
-  color: black !important;
-}
-
 .cyclop-mobile-title {
   display: none !important;
 }
-
 
 .cyclop-title {
   display: block !important;
@@ -92,6 +82,7 @@ a img{
 
   .cyclop-header .material-icons {
     color: #8daa5d !important;
+    font-size: 30px;
   }
 
   .cyclop-header .mdl-layout__drawer-button {
@@ -225,11 +216,26 @@ a img{
 .cyclop-sub-slogan {
   font-size: 21px;
   padding-top: 20px;
+  text-align: center;
+}
+
+.cyclop-sub-title {
+  font-family: 'Geo', 'Helvetica', 'Arial', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 40px;
+  background-color: #f26522;
+  width: 25%;
+  margin: auto;
+  box-shadow: 4px 4px #7f9b4e;
+  color: #ffffff;
+  text-shadow: 3px 3px #93311f;
 }
 
 .asbl-info {
   font-family: 'Nunito', 'Helvetica', 'Arial', sans-serif;
   font-size: 21px;
+  color: #ffffff;
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -348,33 +354,40 @@ a img{
   }
 
 
-.cyclop-atelier-section {
+.cyclop-atelier-separation {
   position: relative;
-  background: url('images/brux.png') center top no-repeat;
-  padding: 25px 0px 25px 0;
+  background: url('images/brux.png') no-repeat;
+  background-position: 50% 180%;
   background-color: #ffffff;
   background-size: contain;
-  height: 600px;
+  height: 400px;
 }
 
-.cyclop-atelier-band {
-  position: absolute;
+.cyclop-atelier-section {
+  position: relative;
+  background-color: #a5bc7e;
+}
+  .cyclop-atelier-band {
+  position: relative;
   bottom: 0;
   width: 100%;
   text-align: center;
-  background-color: #37474f;
+  background-color: #a5bc7e;
 }
 
 .cyclop-atelier-band-text {
   max-width: 800px;
-  margin-left: 25%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 24px;
-  text-align: left;
+  text-align: center;
   color: white;
 }
 
   .cyclop-atelier-band-text p {
     padding-top: 8px;
+    font-family: 'Nunito', 'Helvetica', 'Arial', sans-serif;
+    font-size: 21px;
   }
 
 .cyclop-link {
@@ -402,12 +415,12 @@ a img{
   }
 
   .cyclop-alt-link .material-icons {
-    position: relative;
     top: 6px;
   }
 
 .cyclop-customized-section {
   text-align: center;
+  background-color: #ffffff;
 }
 
 .cyclop-customized-section-text {
@@ -417,9 +430,11 @@ a img{
   padding: 80px 16px 0 16px;
 }
 
-  .cyclop-customized-section-text p {
-    padding-top: 16px;
-  }
+    .cyclop-customized-section-text p {
+      padding-top: 16px;
+      font-family: 'Nunito', 'Helvetica', 'Arial', sans-serif;
+      font-size: 21px;
+      }
 
 .cyclop-customized-section-image {
   background: url('images/devices.jpg') center top no-repeat;
@@ -503,11 +518,60 @@ a img{
     margin-right: 2em;
   }
 
+  .cyclop-footer .mdl-mega-footer--right-section {
+    margin-bottom: auto;
+  }
   .cyclop-footer .mdl-mega-footer--right-section a .material-icons {
     position: relative;
     top: 6px;
   }
 
+  .mdl-button--fab {
+        text-transform: lowercase;
+        font-size: 36px;
+    }
+    .mdl-button.mdl-button--facebook {
+        color: rgb(63, 81, 181);
+    }
+    .mdl-button.mdl-button--facebook:focus:not(:active) {
+        background-color: #3b5998;
+    }
+    .mdl-button--fab.mdl-button--facebook {
+        background: #3b5998;
+        color: rgb(255, 255, 255);
+    }
+    .mdl-button--fab.mdl-button--facebook:hover {
+        background-color: #3b5998;
+    }
+    .mdl-button--fab.mdl-button--facebook:focus:not(:active) {
+        background-color: #3b5998;
+    }
+    .mdl-button--fab.mdl-button--facebook:active {
+        background-color: #3b5998;
+    }
+    .mdl-button--fab.mdl-button--facebook .mdl-ripple {
+    background: rgb(255, 255, 255);
+    }
+
+    .mdl-button.mdl-button--mail:focus:not(:active) {
+        background-color: #a5bc7e;
+    }
+    .mdl-button--fab.mdl-button--mail {
+        background: #a5bc7e;
+        color: rgb(255, 255, 255);
+    }
+    .mdl-button--fab.mdl-button--mail:hover {
+        background-color: #a5bc7e;
+    }
+    .mdl-button--fab.mdl-button--mail:focus:not(:active) {
+        background-color: #a5bc7e;
+    }
+    .mdl-button--fab.mdl-button--mail:active {
+        background-color: #a5bc7e;
+    }
+    .mdl-button--fab.mdl-button--mail .mdl-ripple {
+    background: rgb(255, 255, 255);
+    }
 
 .cyclop-link-menu:hover {
   cursor: pointer;
