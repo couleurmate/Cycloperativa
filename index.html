@@ -15,45 +15,36 @@
   See the License for the specific language governing permissions and
   limitations under the License
 -->
-
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Introducing Lollipop, a sweet new take on cyclop.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Android</title>
+    <title>Cycloperativa</title>
 
     <!-- Page styles -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Geo' rel='stylesheet' type='text/css'>
+    <link href='fonts/wadim_giant' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.deep_orange-light_green.min.css" />
     <link rel="stylesheet" href="styles.css">
-    <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-    </style>
-  </head>
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
 
-  <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+      <div class="cyclop-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
-          <span class="android-title mdl-layout-title">
-            <img class="android-logo-image" src="images/android-logo.png">
+          <span class="cyclop-title mdl-layout-title">
+            <div class="cyclop-title">CYCLOPERATIVA</div>
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
-          <div class="android-header-spacer mdl-layout-spacer"></div>
-          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+          <div class="cyclop-header-spacer mdl-layout-spacer"></div>
+          <div class="cyclop-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
             <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
               <i class="material-icons">search</i>
             </label>
@@ -62,160 +53,159 @@
             </div>
           </div>
           <!-- Navigation -->
-          <div class="android-navigation-container">
-            <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">TV</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>
+          <div class="cyclop-navigation-container">
+            <nav class="cyclop-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#asbl">L'assoc</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">L'équipe</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#bier">Commandes</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#contact">Contact</a>
             </nav>
           </div>
-          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+          <button class="cyclop-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
             <li class="mdl-menu__item">5.0 Lollipop</li>
             <li class="mdl-menu__item">4.4 KitKat</li>
             <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-            <li class="mdl-menu__item">Android History</li>
+            <li class="mdl-menu__item">cyclop History</li>
           </ul>
-          <span class="android-mobile-title mdl-layout-title">
-            <img class="android-logo-image" src="images/android-logo.png">
-          </span>
         </div>
       </div>
 
-      <div class="android-drawer mdl-layout__drawer">
+      <div class="cyclop-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
-          <img class="android-logo-image" src="images/android-logo-white.png">
+          <img class="cyclop-logo-image" src="images/cyclop-logoo.png">
         </span>
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="">Phones</a>
           <a class="mdl-navigation__link" href="">Tablets</a>
-          <a class="mdl-navigation__link" href="">Wear</a>
-          <a class="mdl-navigation__link" href="">TV</a>
-          <a class="mdl-navigation__link" href="">Auto</a>
-          <a class="mdl-navigation__link" href="">One</a>
-          <a class="mdl-navigation__link" href="">Play</a>
-          <div class="android-drawer-separator"></div>
+          <div class="cyclop-drawer-separator"></div>
           <span class="mdl-navigation__link" href="">Versions</span>
           <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
           <a class="mdl-navigation__link" href="">KitKat 4.4</a>
-          <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
-          <a class="mdl-navigation__link" href="">Android history</a>
-          <div class="android-drawer-separator"></div>
+          <div class="cyclop-drawer-separator"></div>
           <span class="mdl-navigation__link" href="">Resources</span>
           <a class="mdl-navigation__link" href="">Official blog</a>
-          <a class="mdl-navigation__link" href="">Android on Google+</a>
-          <a class="mdl-navigation__link" href="">Android on Twitter</a>
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">For developers</span>
-          <a class="mdl-navigation__link" href="">App developer resources</a>
-          <a class="mdl-navigation__link" href="">Android Open Source Project</a>
-          <a class="mdl-navigation__link" href="">Android SDK</a>
         </nav>
       </div>
 
-      <div class="android-content mdl-layout__content">
+      <div class="cyclop-content mdl-layout__content">
         <a name="top"></a>
-        <div class="android-be-together-section mdl-typography--text-center">
-          <div class="android-font android-slogan">be together. not the same.</div>
-          <div class="android-font android-sub-slogan">welcome to android... be yourself. do your thing. see what's going on.</div>
-          <div class="android-font android-create-character">
-            <a href=""><img src="images/andy.png"> create your android character</a>
+        <div class="cyclop-be-together-section mdl-typography--text-center">
+          <div class="cyclop-font cyclop-slogan">Het fiets atelier vélo van quartier Anneesens</div>
+          <div class="cyclop-font cyclop-sub-slogan">open chaque Lundi vanaf 18h <br> @ Rue du Midistraat 165a</div>
+        </div>
+
+        <div class="cyclop-asbl-section mdl-typography--text-center">
+          <a name="asbl"></a>
+          <div class="cyclop-sub-title">C’ESTKWAÇA? WADESDA?</div>
+            <div class="asbl-font asbl-info">De Cycloperativa asbl/vzw is een association van Bruxellois(es)
+              <br>qui apprennent à réparer des vélos et travailler en cooperation
+              <br>Ainsi, on lutte contre l’impact de la domination de la voiture et de la competition dans notre vi(ll)e
+          <div class="cyclop-asbl">
+            <div class="cyclop-atelier cyclop-asbl">
+              <a class="cyclop-image-link" href="#atelier">
+                <img class="cyclop-asbl-image" src="images/atelier.png">
+              </a>
+              <a class="cyclop-link mdl-typography--font-regular mdl-typography--text-uppercase" href="#atelier">Het atelier</a>
+            </div>
+            <div class="cyclop-velo cyclop-asbl">
+              <a class="cyclop-image-link" href="">
+                <img class="cyclop-asbl-image" src="images/velo.png">
+              </a>
+              <a class="cyclop-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Vélo</a>
+            </div>
+            <div class="cyclop-bier cyclop-asbl">
+              <a class="cyclop-image-link" href="">
+                <img class="cyclop-asbl-image" src="images/bier.jpg">
+              </a>
+              <a class="cyclop-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Bier</a>
+            </div>
+            <div class="cyclop-equipe cyclop-asbl">
+              <a class="cyclop-image-link" href="">
+                <img class="cyclop-asbl-image" src="images/cyclope.png">
+              </a>
+              <a class="cyclop-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Les cyclopes</a>
+            </div>
+          </div>
+        </div>
+        <div class="cyclop-atelier-separation">
+          <a name="atelier"></a>
+        </div>
+        <div class="cyclop-atelier-section">
+          <div class="cyclop-atelier-band">
+            <div class="cyclop-atelier-band-text">
+              <div class="cyclop-sub-title">Atelier</div>
+              <p>
+                We hebben een lokaal in de quartier Anneessens
+                <br>Allez, ‘t is te zeggen op de rand ervan, en juist op de rand met de Marollen
+                <br>'t is in de Rue du Midi 165a, dichtbij place Rouppe
+                <br>On adore le quartier et ses habitants, car on y retrouve la vie. Vous pouvez nous trouver (presque) elke maandag vanaf 18h tot ongeveer 20h
+                <br>dans le local ou à l’extérieur, avec les kets et les adultes du quartier
+                <br><br>Maar we bougeren ook dans tout les coins (de Bruxelles)
+                <br>Les mercredis après-midi, nous assistons des associations de l’Aide à la jeunesse en Milieu Ouvert (AMO)
+                <br>pour faciliter l’apprentisage des kets d’un tas des choses, à travers la mécanique vélo
+              </p>
+            </div>
+          </div>
+        </div>
+          <div class="cyclop-customized-section">
+            <div class="cyclop-customized-section-text">
+              <a name="bier"></a>
+              <div class="cyclop-sub-title">Bier</div>
+                <p>
+                  Pour récolter des fonds pour payer un loyer ET pour fêter le lancement de notre nouveau logo
+                  <br>quoi de mieux que de vendre une bière étiquettée à notre nom par la brasserie de la Senne !
+                  <br>Et pour fêter notre nouveau logo, on vend aussi des t-shirts et des écussons/badges en tissu avec la Cycloperativa dessus !
+                  <br><br>
+              <a class="cyclop-bier-form" href="https://docs.google.com/forms/d/1MIyucpBN1bP7539oWsnpMbqppr_gBYUHbKrF874OhTU/viewform?c=0&w=1" target="_blank">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                Koop maar des bières de soutien
+                </button>
+              </a>
+              </p>
+            </div>
+            <div class="cyclop-customized-section-image"></div>
+          </div>
+        <div class="cyclop-more-section">
+          <div class="cyclop-section-title mdl-typography--display-1-color-contrast">More from cyclop</div>
+
+          <!-- Event card -->
+          <div class="demo-card-event mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand">
+              <h4>
+                Featured event:<br>
+                May 24, 2016<br>
+                7-11pm
+              </h4>
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                Add to Calendar
+              </a>
+              <div class="mdl-layout-spacer"></div>
+              <i class="material-icons">event</i>
+            </div>
           </div>
 
-          <a href="#screens">
-            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-              <i class="material-icons">expand_more</i>
-            </button>
-          </a>
-        </div>
-        <div class="android-screen-section mdl-typography--text-center">
-          <a name="screens"></a>
-          <div class="mdl-typography--display-1-color-contrast">Powering screens of all sizes</div>
-          <div class="android-screens">
-            <div class="android-wear android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/wear-silver-on.png">
-                <img class="android-screen-image" src="images/wear-black-on.png">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android Wear</a>
-            </div>
-            <div class="android-phone android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/nexus6-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Phones</a>
-            </div>
-            <div class="android-tablet android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/nexus9-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Tablets</a>
-            </div>
-            <div class="android-tv android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/tv-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android TV</a>
-            </div>
-            <div class="android-auto android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/auto-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">Coming Soon: Android Auto</a>
-            </div>
-          </div>
-        </div>
-        <div class="android-wear-section">
-          <div class="android-wear-band">
-            <div class="android-wear-band-text">
-              <div class="mdl-typography--display-2 mdl-typography--font-thin">The best of Google built in</div>
-              <p class="mdl-typography--headline mdl-typography--font-thin">
-                Android works perfectly with your favourite apps like Google Maps,
-                Calendar and YouTube.
-              </p>
-              <p>
-                <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
-                  See what's new in the Play Store&nbsp;<i class="material-icons">chevron_right</i>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="android-customized-section">
-          <div class="android-customized-section-text">
-            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you</div>
-            <p class="mdl-typography--font-light">
-              Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
-              <br>
-              <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
-            </p>
-          </div>
-          <div class="android-customized-section-image"></div>
-        </div>
-        <div class="android-more-section">
-          <div class="android-section-title mdl-typography--display-1-color-contrast">More from Android</div>
-          <div class="android-card-container mdl-grid">
+          <div class="cyclop-card-container mdl-grid">
             <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-1.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Get going on Android</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to Android quick and easy</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Make the switch
-                   <i class="material-icons">chevron_right</i>
-                 </a>
+              <div class="demo-card-event mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand">
+                  <h4>
+                    Featured event:<br>
+                    May 24, 2016<br>
+                    7-11pm
+                  </h4>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    Add to Calendar
+                  </a>
+                  <div class="mdl-layout-spacer"></div>
+                  <i class="material-icons">event</i>
+                </div>
               </div>
             </div>
 
@@ -224,14 +214,14 @@
                 <img src="images/more-from-4.png">
               </div>
               <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Create your own Android character</h4>
+                 <h4 class="mdl-card__title-text">Create your own cyclop character</h4>
               </div>
               <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green Android mascot into you, your friends, anyone!</span>
+                <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green cyclop mascot into you, your friends, anyone!</span>
               </div>
               <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   androidify.com
+                 <a class="cyclop-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   cyclopify.com
                    <i class="material-icons">chevron_right</i>
                  </a>
               </div>
@@ -242,13 +232,13 @@
                 <img src="images/more-from-2.png">
               </div>
               <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Get a clean customisable home screen</h4>
+                 <h4 class="mdl-card__title-text">Get a clean customisable home asbl</h4>
               </div>
               <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">A clean, simple, customisable home screen that comes with the power of Google Now: Traffic alerts, weather and much more, just a swipe away.</span>
+                <span class="mdl-typography--font-light mdl-typography--subhead">A clean, simple, customisable home asbl that comes with the power of Google Now: Traffic alerts, weather and much more, just a swipe away.</span>
               </div>
               <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                 <a class="cyclop-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
                    Download now
                    <i class="material-icons">chevron_right</i>
                  </a>
@@ -263,10 +253,10 @@
                  <h4 class="mdl-card__title-text">Millions to choose from</h4>
               </div>
               <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your Android device uniquely yours.</span>
+                <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your cyclop device uniquely yours.</span>
               </div>
               <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                 <a class="cyclop-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
                    Find apps
                    <i class="material-icons">chevron_right</i>
                  </a>
@@ -275,30 +265,39 @@
           </div>
         </div>
 
-        <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
-            <div class="mdl-mega-footer--left-section">
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
-            </div>
-            <div class="mdl-mega-footer--right-section">
-              <a class="mdl-typography--font-light" href="#top">
-                Back to Top
-                <i class="material-icons">expand_less</i>
-              </a>
-            </div>
-          </div>
+            <footer class="cyclop-footer mdl-mega-footer">
+              <div class="mdl-mega-footer--right-section">
+                <a class="mdl-typography--font-light" href="#top">
+                  Back to Top
+                  <i class="material-icons">expand_less</i>
+                </a>
+              </div>
+            <a name="contact"></a>
+            <div class="cyclop-sub-title">Contact</div>
+              <div class="cyclop-font cyclop-sub-slogan">open chaque Lundi vanaf 18h
+                <br> @ Rue du Midistraat 165a
+                <br> 1000 Bruxsel
+              </div>
+                <div class="mdl-mega-footer--middle-section">
+                  <!-- Facebook -->
+                    <a href="https://www.facebook.com/Cycloperativa" title="Share on Facebook" target="_blank" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-button--facebook">
+                      <i class="fa fa-facebook fa-fw"></i>
+                    </a>
 
-          <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">Satellite imagery: © 2014 Astrium, DigitalGlobe</p>
-            <p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>
+                  <!-- Mail -->
+                    <a href="" title="Share on Facebook" target="_blank" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-button--mail">
+                      <i class="fa fa-envelope-o fa-fw"></i>
+                    </a>
+                </div>
           </div>
 
           <div class="mdl-mega-footer--bottom-section">
-            <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
+            <p class="mdl-typography--font-light">vzw Cycloperativa asbl 2015</p>
+              <div class="">
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+              </div>
+            <a class="cyclop-link cyclop-link-menu mdl-typography--font-light" id="version-dropdown">
               Versions
               <i class="material-icons">arrow_drop_up</i>
             </a>
@@ -306,26 +305,26 @@
               <li class="mdl-menu__item">5.0 Lollipop</li>
               <li class="mdl-menu__item">4.4 KitKat</li>
               <li class="mdl-menu__item">4.3 Jelly Bean</li>
-              <li class="mdl-menu__item">Android History</li>
+              <li class="mdl-menu__item">cyclop History</li>
             </ul>
-            <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
+            <a class="cyclop-link cyclop-link-menu mdl-typography--font-light" id="developers-dropdown">
               For Developers
               <i class="material-icons">arrow_drop_up</i>
             </a>
             <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
               <li class="mdl-menu__item">App developer resources</li>
-              <li class="mdl-menu__item">Android Open Source Project</li>
-              <li class="mdl-menu__item">Android SDK</li>
-              <li class="mdl-menu__item">Android for Work</li>
+              <li class="mdl-menu__item">cyclop Open Source Project</li>
+              <li class="mdl-menu__item">cyclop SDK</li>
+              <li class="mdl-menu__item">cyclop for Work</li>
             </ul>
-            <a class="android-link mdl-typography--font-light" href="">Blog</a>
-            <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
+            <a class="cyclop-link mdl-typography--font-light" href="">Blog</a>
+            <a class="cyclop-link mdl-typography--font-light" href="">Privacy Policy</a>
           </div>
 
         </footer>
       </div>
     </div>
-    <a href="https://github.com/google/material-design-lite/blob/master/templates/android-dot-com/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+
   </body>
 </html>
