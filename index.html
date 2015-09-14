@@ -27,7 +27,6 @@
     <!-- Page styles -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Geo' rel='stylesheet' type='text/css'>
-    <link href='fonts/wadim_giant' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.deep_orange-light_green.min.css" />
     <link rel="stylesheet" href="styles.css">
@@ -93,38 +92,40 @@
       <div class="cyclop-content mdl-layout__content">
         <a name="top"></a>
         <div class="cyclop-be-together-section mdl-typography--text-center">
-          <div class="cyclop-font cyclop-slogan">Het fiets atelier vélo van quartier Anneesens</div>
-          <div class="cyclop-font cyclop-sub-slogan">open chaque Lundi vanaf 18h <br> @ Rue du Midistraat 165a</div>
+          <span class="cyclop-be-together-text">
+            <div class="cyclop-font cyclop-slogan">Het fiets atelier vélo van quartier Anneesens</div>
+            <div class="cyclop-font cyclop-sub-slogan">open chaque Lundi vanaf 18h <br> @ Rue du Midistraat 165a</div>
+          </span>
         </div>
 
         <div class="cyclop-asbl-section mdl-typography--text-center">
           <a name="asbl"></a>
-          <div class="cyclop-sub-title">C’ESTKWAÇA? WADESDA?</div>
-            <div class="asbl-font asbl-info">De Cycloperativa asbl/vzw is een association van Bruxellois(es)
+          <div class="cyclop-sub-title">C’ESTKWAÇA?<br>WADESDA?</div>
+            <div class="asbl-font asbl-info">De Cycloperativa is een association van Bruxellois(es)
               <br>qui apprennent à réparer des vélos et travailler en cooperation
               <br>Ainsi, on lutte contre l’impact de la domination de la voiture et de la competition dans notre vi(ll)e
           <div class="cyclop-asbl">
             <div class="cyclop-atelier cyclop-asbl">
               <a class="cyclop-image-link" href="#atelier">
-                <img class="cyclop-asbl-image" src="images/atelier.png">
+                <img class="cyclop-asbl-image cyclop-asbl-atelier" src="images/atelier.png">
               </a>
               <a class="cyclop-link mdl-typography--font-regular mdl-typography--text-uppercase" href="#atelier">Het atelier</a>
             </div>
             <div class="cyclop-velo cyclop-asbl">
               <a class="cyclop-image-link" href="">
-                <img class="cyclop-asbl-image" src="images/velo.png">
+                <img class="cyclop-asbl-image cyclop-asbl-velo" src="images/velo.png">
               </a>
               <a class="cyclop-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Vélo</a>
             </div>
             <div class="cyclop-bier cyclop-asbl">
               <a class="cyclop-image-link" href="">
-                <img class="cyclop-asbl-image" src="images/bier.jpg">
+                <img class="cyclop-asbl-image cyclop-asbl-bier" src="images/bier.jpg">
               </a>
               <a class="cyclop-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Bier</a>
             </div>
             <div class="cyclop-equipe cyclop-asbl">
               <a class="cyclop-image-link" href="">
-                <img class="cyclop-asbl-image" src="images/cyclope.png">
+                <img class="cyclop-asbl-image cyclop-asbl-equipe" src="images/cyclope.png">
               </a>
               <a class="cyclop-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Les cyclopes</a>
             </div>
@@ -160,7 +161,7 @@
                   <br>Et pour fêter notre nouveau logo, on vend aussi des t-shirts et des écussons/badges en tissu avec la Cycloperativa dessus !
                   <br><br>
               <a class="cyclop-bier-form" href="https://docs.google.com/forms/d/1MIyucpBN1bP7539oWsnpMbqppr_gBYUHbKrF874OhTU/viewform?c=0&w=1" target="_blank">
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--soutien">
                 Koop maar des bières de soutien
                 </button>
               </a>
@@ -169,39 +170,47 @@
             <div class="cyclop-customized-section-image"></div>
           </div>
         <div class="cyclop-more-section">
-          <div class="cyclop-section-title mdl-typography--display-1-color-contrast">More from cyclop</div>
+          <div class="cyclop-sub-title">Cyclopagenda</div>
 
-          <!-- Event card -->
-          <div class="demo-card-event mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title mdl-card--expand">
-              <h4>
-                Featured event:<br>
-                May 24, 2016<br>
-                7-11pm
-              </h4>
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                Add to Calendar
-              </a>
-              <div class="mdl-layout-spacer"></div>
-              <i class="material-icons">event</i>
-            </div>
-          </div>
-
+        <!-- Event card -->
           <div class="cyclop-card-container mdl-grid">
             <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="demo-card-event mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__media">
+                  <h3> Fête de la Charge
+                  </h3>
+                </div>
                 <div class="mdl-card__title mdl-card--expand">
                   <h4>
-                    Featured event:<br>
-                    May 24, 2016<br>
-                    7-11pm
+                    20 Septembre 2015<br>
+                    de 10h à 17h
                   </h4>
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                   <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                    Add to Calendar
+                    Ajouter à mes événements
+                  </a>
+                  <div class="mdl-layout-spacer"></div>
+                  <i class="material-icons">event</i>
+                </div>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="demo-card-event mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__media">
+                  <h3> Atelier
+                  </h3>
+                </div>
+                <div class="mdl-card__title mdl-card--expand">
+                  <h4>
+                    21 Septembre 2015<br>
+                    à partir de 18h
+                  </h4>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    Ajouter à mes événements
                   </a>
                   <div class="mdl-layout-spacer"></div>
                   <i class="material-icons">event</i>
@@ -211,25 +220,7 @@
 
             <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
-                <img src="images/more-from-4.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Create your own cyclop character</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green cyclop mascot into you, your friends, anyone!</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="cyclop-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   cyclopify.com
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-2.png">
+                <img src="">
               </div>
               <div class="mdl-card__title">
                  <h4 class="mdl-card__title-text">Get a clean customisable home asbl</h4>
@@ -247,7 +238,7 @@
 
             <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
-                <img src="images/more-from-3.png">
+                <img src="">
               </div>
               <div class="mdl-card__title">
                  <h4 class="mdl-card__title-text">Millions to choose from</h4>
@@ -269,16 +260,16 @@
             <footer class="cyclop-footer mdl-mega-footer">
               <div class="mdl-mega-footer--right-section">
                 <a class="mdl-typography--font-light" href="#top">
-                  Back to Top
-                  <i class="material-icons">expand_less</i>
+                  <i class="material-icons md-36">expand_less</i>
                 </a>
               </div>
             <a name="contact"></a>
             <div class="cyclop-sub-title">Contact</div>
-              <div class="cyclop-font cyclop-sub-slogan">open chaque Lundi vanaf 18h
+              <div class="cyclop-sub-slogan">open chaque Lundi vanaf 18h
                 <br> @ Rue du Midistraat 165a
                 <br> 1000 Bruxsel
               </div>
+
                 <div class="mdl-mega-footer--middle-section">
                   <!-- Facebook -->
                     <a href="https://www.facebook.com/Cycloperativa" title="Share on Facebook" target="_blank" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-button--facebook">
