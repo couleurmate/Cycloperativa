@@ -371,38 +371,60 @@ a img{
 
 .cyclop-atelier-separation {
   position: relative;
-  background: url('images/brux.png') no-repeat;
-  background-position: 50% 180%;
+  background: url('images/brux.png') center 30% no-repeat scroll;
   background-color: #ffffff;
-  background-size: contain;
-  height: 400px;
-}
+  background-size: cover;
+  height: 600px;
+  padding-top:  24px;
+  }
 
 .cyclop-atelier-section {
   position: relative;
-  background-color: #a5bc7e;
-  padding: 24px;
-}
-  .cyclop-atelier-band {
-  position: relative;
-  bottom: 0;
+  }
+    .cyclop-atelier-band {
   width: 100%;
   text-align: center;
-  background-color: #a5bc7e;
-}
+  background-color: #f26522;
+    }
 
-.cyclop-atelier-band-text {
+    .cyclop-atelier-band-text {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   color: white;
-}
+  padding-bottom: 24px;
+    }
 
   .cyclop-atelier-band-text p {
     padding-top: 8px;
     font-size: 21px;
   }
+
+.cyclop-cyclopes-section {
+    position: relative;
+    bottom: 0;
+    padding: 24px;
+    z-index: 2;
+    background: #a5bc7e;
+  }
+      .cyclop-cyclopes-band {
+    width: 100%;
+    text-align: center;
+      }
+
+      .cyclop-cyclopes-band-text {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+      }
+
+    .cyclop-cyclopes-band-text p {
+      padding-top: 8px;
+      font-size: 21px;
+    }
 
 .cyclop-link {
   text-decoration: none;
@@ -557,30 +579,30 @@ a img{
   }
 
   .mdl-button--fab {
-        text-transform: lowercase;
-        font-size: 36px;
+      text-transform: lowercase;
+      font-size: 36px;
     }
     .mdl-button.mdl-button--facebook {
-        color: rgb(63, 81, 181);
+      color: rgb(63, 81, 181);
     }
     .mdl-button.mdl-button--facebook:focus:not(:active) {
-        background-color: #3b5998;
+      background-color: #3b5998;
     }
     .mdl-button--fab.mdl-button--facebook {
-        background: #3b5998;
-        color: #ffffff;
+      background: #3b5998;
+      color: #ffffff;
     }
     .mdl-button--fab.mdl-button--facebook:hover {
-        background-color: #1f3054;
+      background-color: #1f3054;
     }
     .mdl-button--fab.mdl-button--facebook:focus:not(:active) {
-        background-color: #3b5998;
+      background-color: #3b5998;
     }
     .mdl-button--fab.mdl-button--facebook:active {
-        background-color: #3b5998;
+      background-color: #3b5998;
     }
     .mdl-button--fab.mdl-button--facebook .mdl-ripple {
-    background: rgb(255, 255, 255);
+      background: rgb(255, 255, 255);
     }
 
     .mdl-button.mdl-button--mail:focus:not(:active) {
@@ -611,6 +633,7 @@ a img{
 .demo-card-event.mdl-card {
   width: auto;
   height: auto;
+  position: relative;
 }
 .demo-card-event > .mdl-card__actions {
   border-color: rgba(255, 255, 255, 0.2);
@@ -621,6 +644,10 @@ a img{
 .demo-card-event > .mdl-card__title > h4 {
   margin-top: 0;
   padding-bottom: 25px;
+}
+.mdl-card__actions {
+  position: absolute;
+  bottom: 0;
 }
 .demo-card-event > .mdl-card__actions {
   display: flex;
