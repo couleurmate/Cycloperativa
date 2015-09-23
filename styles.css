@@ -267,6 +267,7 @@ a img{
   overflow-x: hidden;
   overflow-y: hidden;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .cyclop-asbl {
@@ -276,9 +277,17 @@ a img{
   .cyclop-asbl-image {
     z-index: 1;
     border-radius: 25px 25px 25px 25px;
+    width: 140px;
+    height: 140px;
+    padding: 10px;
     background: #ffffff;
-    -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
-    transition: width 1s;
+    -webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s, height 1s;
+  }
+
+  .cyclop-asbl-image:hover {
+  width: 53%;
+  height: 53%;
   }
 
 .cyclop-asbl .cyclop-link {
@@ -298,44 +307,26 @@ a img{
 }
 
   .cyclop-atelier .cyclop-asbl-image {
-  width: 50%;
-  }
+    }
 
   .cyclop-asbl-atelier:hover {
-  width: 53%;
-  }
-
+    }
 
 .cyclop-velo {
-  display: inline-block;
-  width: 300px;
-  margin-right: 5px;
-}
+    display: inline-block;
+    width: 300px;
+    margin-right: 5px;
+  }
 
   .cyclop-velo .cyclop-asbl-image {
-  width: 35%;
-  padding: 10px;
+    min-height: 100%;
+    width: auto;
+    padding-left: 31.5px;
+    padding-right: 31.5px;
   }
 
   .cyclop-asbl-velo:hover {
-  width: 37%;
-  }
-
-
-.cyclop-tablet {
-  display: inline-block;
-  width: 110px;
-  margin-right: 64px;
-}
-
-  .cyclop-tablet .cyclop-asbl-image {
-  width: 100%;
-  }
-
-  .cyclop-tablet .cyclop-link {
-    display: block;
-    z-index: 2;
-  }
+    }
 
 
 .cyclop-bier {
@@ -345,12 +336,10 @@ a img{
 }
 
   .cyclop-bier .cyclop-asbl-image {
-  width: 45%;
-  }
+    }
 
   .cyclop-asbl-bier:hover {
-  width: 48%;
-  }
+    }
 
 
 .cyclop-equipe {
@@ -360,13 +349,10 @@ a img{
 }
 
   .cyclop-equipe .cyclop-asbl-image {
-  width: 45%;
-  padding: 10px;
-  }
+    }
 
   .cyclop-asbl-equipe:hover {
-  width: 48%;
-  }
+    }
 
 
 .cyclop-atelier-separation {
