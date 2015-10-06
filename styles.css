@@ -1,19 +1,3 @@
-/**
- * Copyright 2015 Google Inc. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 @font-face {
   font-family: 'Geo', sans-serif;
   font-family: 'Nunito', sans-serif;
@@ -286,8 +270,7 @@ a img{
   }
 
   .cyclop-asbl-image:hover {
-  width: 53%;
-  height: 53%;
+  width: 50%;
   }
 
 .cyclop-asbl .cyclop-link {
@@ -306,28 +289,11 @@ a img{
   margin-right: 5px;
 }
 
-  .cyclop-atelier .cyclop-asbl-image {
-    }
-
-  .cyclop-asbl-atelier:hover {
-    }
-
 .cyclop-velo {
     display: inline-block;
     width: 300px;
     margin-right: 5px;
   }
-
-  .cyclop-velo .cyclop-asbl-image {
-    max-height: 150px;
-    width: auto;
-    padding-left: 31.5px;
-    padding-right: 31.5px;
-  }
-
-  .cyclop-asbl-velo:hover {
-    }
-
 
 .cyclop-bier {
   display: inline-block;
@@ -335,25 +301,11 @@ a img{
   margin-right: 5px;
 }
 
-  .cyclop-bier .cyclop-asbl-image {
-    }
-
-  .cyclop-asbl-bier:hover {
-    }
-
-
 .cyclop-equipe {
   display: inline-block;
   width: 300px;
   margin-right: 5px;
 }
-
-  .cyclop-equipe .cyclop-asbl-image {
-    }
-
-  .cyclop-asbl-equipe:hover {
-    }
-
 
 .cyclop-atelier-separation {
   position: relative;
