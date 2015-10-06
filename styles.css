@@ -56,6 +56,7 @@ a img{
   background-color: #a5bc7e;
   width: 280px;
   box-shadow: 4px 4px #7f9b4e;
+  text-transform: uppercase;
 }
 
 .cyclop-header {
@@ -177,14 +178,14 @@ a img{
   position: relative;
   height: 700px;
   background: url('images/cyclop-logoo.png') center 30% no-repeat scroll;
-  background-position: 50% -10%;
+  background-position: 50% 40px;
   background-color: #F8F8F8;
   background-size: contain;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
-}
+ }
 
 .cyclop-be-together-text {
-  top: 550px; /* Fix */
+  top: 580px; /* Fix */
   position: relative;
   width: auto;
 }
@@ -329,8 +330,10 @@ a img{
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  text-align: left;
   color: white;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 24px;
     }
 
