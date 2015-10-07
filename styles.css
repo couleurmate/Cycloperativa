@@ -8,6 +8,9 @@ body {
   font-family: 'Nunito', 'Helvetica', 'Arial', sans-serif;
 }
 
+a {
+  color: inherit;
+}
 /* Disable ugly boxes around images in IE10 */
 a img{
   border: 0px;
@@ -266,12 +269,13 @@ a img{
     height: 140px;
     padding: 10px;
     background: #ffffff;
-    -webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
-    transition: width 1s, height 1s;
+    -webkit-transition: width 0.5s, height 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.5s, height 0.5s;
   }
 
   .cyclop-asbl-image:hover {
   width: 50%;
+  height: 50%;
   }
 
 .cyclop-asbl .cyclop-link {
@@ -446,10 +450,6 @@ a img{
   .mdl-card {
     background: #f26522;
   }
-  .mdl-cell {
-    width: 240px;
-    height: 300px;
-  }
   .cyclop-card-container .mdl-card__media {
     overflow: hidden;
     background: transparent;
@@ -522,6 +522,7 @@ a img{
   .mdl-button--fab {
       text-transform: lowercase;
       font-size: 36px;
+      line-height: 150%;
     }
     .mdl-button.mdl-button--facebook {
       color: rgb(63, 81, 181);
