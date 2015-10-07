@@ -274,8 +274,8 @@ a img{
   }
 
   .cyclop-asbl-image:hover {
-  width: 50%;
-  height: 50%;
+  width: 145px;
+  height: 145px;
   }
 
 .cyclop-asbl .cyclop-link {
@@ -518,6 +518,13 @@ a img{
     position: relative;
     top: 6px;
   }
+
+.carte {
+  padding: 0px;
+  border-style: outset;
+  border-color: #f26522;
+  border-width: 10px;
+}
 
   .mdl-button--fab {
       text-transform: lowercase;
