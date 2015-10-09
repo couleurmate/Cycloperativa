@@ -445,45 +445,34 @@ a img{
     padding-bottom: 24px;
   }
 
-.cyclop-card-container {
+.cyclop-event-container {
 }
-  .mdl-card {
-    background: #f26522;
+  .cyclop-event-box {
+    background-color: #f26522;
+    height: 260px;
   }
-  .cyclop-card-container .mdl-card__media {
-    overflow: hidden;
-    background: transparent;
+  .cyclop-event-title {
+    height: 80px;
+    display: inline-block;
   }
-
-    .cyclop-card-container .mdl-card__media img {
-      width: 100%;
+    .cyclop-event-title-font {
+      font-size: 30px;
+      font-family: Nunito; 
     }
-
-  .cyclop-card-container .mdl-card__title {
-    background: transparent;
-    height: auto;
+  .cyclop-event-place {
+    height: 40px;
+    display: inline-block;
   }
-
-  .cyclop-card-container .mdl-card__title-text {
-    color: black;
-    height: auto;
+  .cyclop-event-date {
+    height: 40px;
+    display: inline-block;
   }
-
-  .cyclop-card-container .mdl-card__supporting-text {
-    height: auto;
-    color: black;
-    padding-bottom: 48px;
-  }
-
-  .cyclop-card-container .mdl-card__actions {
-    position: absolute;
-    bottom: 0;
-  }
-
-  .cyclop-card-container .mdl-card__actions a {
-    border-top: none;
-    line-height: 32px;
-    font-size: 16px;
+    .cyclop-event-date-font {
+      font-size: 20px;
+    }
+  .cyclop-event-button {
+    height: 40px;
+    display: inline-block;
   }
 
 .cyclop-footer {
@@ -576,37 +565,6 @@ a img{
 
 .cyclop-link-menu:hover {
   cursor: pointer;
-}
-
-  /* Event card */
-.demo-card-event.mdl-card {
-  width: auto;
-  height: auto;
-  position: relative;
-}
-.demo-card-event > .mdl-card__actions {
-  border-color: rgba(255, 255, 255, 0.2);
-}
-.demo-card-event > .mdl-card__title {
-  align-items: flex-start;
-}
-.demo-card-event > .mdl-card__title > h4 {
-  margin-top: 0;
-  padding-bottom: 25px;
-}
-.mdl-card__actions {
-  position: absolute;
-  bottom: 0;
-}
-.demo-card-event > .mdl-card__actions {
-  display: flex;
-  box-sizing:border-box;
-  align-items: center;
-}
-.demo-card-event > .mdl-card__title,
-.demo-card-event > .mdl-card__actions,
-.demo-card-event > .mdl-card__actions > .mdl-button {
-  color: #fff;
 }
 
 /**** Mobile layout ****/
