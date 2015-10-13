@@ -207,6 +207,13 @@ a img{
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  .cyclop-sub-location {
+    text-decoration: none;
+    color: #f26522;
+    vertical-align: top;
+  }
+    .cyclop-sub-location:hover {
+    }
 
   .mdl-mega-footer {
     color: #000000;
@@ -315,15 +322,22 @@ a img{
 
 .cyclop-atelier-separation {
   position: relative;
+  height: 600px;
   padding-top:  24px;
+  background-attachment: fixed;
+  background: url('images/brux.png') 50% 30%;
+  background-repeat: no-repeat;
+    background-color: #ffffff;
+  background-size: contain;
+  z-index: -1;
   }
   .cyclop-atelier-back {
     height: 600px;
     background-attachment: fixed;
-    background: url('images/brux.png') center 30%;
+    background: url('images/brux.png') 50% 40%;
     background-repeat: no-repeat;
       background-color: #ffffff;
-    background-size: cover;
+    background-size: contain;
     z-index: -1;
   }
 
@@ -345,10 +359,11 @@ a img{
     .cyclop-atelier-band-text p {
       font-size: 21px;
     }
-    .cyclop-atelier-band-text.upper-text p {
-      color: #618834;
-      margin-top: 10px;
-    }
+      .cyclop-atelier-band-text.upper-text p {
+        color: #618834;
+        margin-top: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+      }
     .cyclop-atelier-band-text.lower-text p {
       color: #fff;
     }
