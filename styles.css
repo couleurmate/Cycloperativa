@@ -176,6 +176,13 @@ a img{
 	  height: 150px;
 	  width: 150px;
   }
+.push-link {
+  height: 25px;
+  display: block;
+}
+.cyclop-content {
+  height: 100%;
+}
 
 .cyclop-be-together-section {
   position: relative;
@@ -188,8 +195,10 @@ a img{
  }
 
 .cyclop-be-together-text {
-  top: 580px; /* Fix */
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   width: auto;
 }
   .cyclop-font {
@@ -253,12 +262,12 @@ a img{
   position: relative;
   background-color: #a5bc7e;
   padding-top: 24px;
-  padding-bottom: 80px;
 }
 
 .cyclop-asbl {
   text-align: center;
   width: 100%;
+  max-width: 900px;
   white-space: nowrap;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -266,16 +275,11 @@ a img{
   padding-bottom: 10px;
 }
 
-.cyclop-asbl {
-  text-align: center;
-}
-
   .cyclop-asbl-image {
     z-index: 1;
     border-radius: 25px 25px 25px 25px;
     width: 140px;
     height: 140px;
-    padding: 10px;
     background: #ffffff;
     -webkit-transition: width 0.5s, height 0.5s; /* For Safari 3.1 to 6.0 */
     transition: width 0.5s, height 0.5s;
@@ -296,50 +300,28 @@ a img{
   text-decoration: none;
 }
 
-.cyclop-atelier {
+.cyclop-vzw {
   display: inline-block;
-  width: 300px;
-  margin-right: 5px;
-}
-
-.cyclop-velo {
-    display: inline-block;
-    width: 300px;
-    margin-right: 5px;
-  }
-
-.cyclop-bier {
-  display: inline-block;
-  width: 300px;
-  margin-right: 5px;
-}
-
-.cyclop-equipe {
-  display: inline-block;
-  width: 300px;
-  margin-right: 5px;
+  width: 200px;
 }
 
 .cyclop-atelier-separation {
   position: relative;
-  height: 600px;
-  padding-top:  24px;
-  background-attachment: fixed;
-  background: url('images/brux.png') 50% 30%;
+  height: auto;
+  padding:  24px;
+  z-index: 1;
+  background-color: #fff;
+  }
+.cyclop-atelier-back {
+  height: 400px;
+  width: 100%;
+  background: url('images/brux.png') center 50%;
+  background-attachment: local;
   background-repeat: no-repeat;
-    background-color: #ffffff;
-  background-size: contain;
+  background-color: #ffffff;
+  background-size: cover;
   z-index: -1;
-  }
-  .cyclop-atelier-back {
-    height: 600px;
-    background-attachment: fixed;
-    background: url('images/brux.png') 50% 40%;
-    background-repeat: no-repeat;
-      background-color: #ffffff;
-    background-size: contain;
-    z-index: -1;
-  }
+}
 
 .cyclop-atelier-section {
   position: relative;
@@ -352,6 +334,7 @@ a img{
 
     .cyclop-atelier-band-text {
   max-width: 800px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -439,8 +422,9 @@ a img{
       }
 
     .mdl-button.mdl-button--soutien {
-          background: #f26522;
-          color: #ffffff;
+      background: #f26522;
+      color: #ffffff;
+      font-size: large;
       }
     .mdl-button--soutien:hover {
       background-color: #8f3d16;
@@ -457,7 +441,6 @@ a img{
 
 .cyclop-more-section {
   padding: 24px;
-  max-width: 1044px;
   margin-left: auto;
   margin-right: auto;
   background-color: #a5bc7e;
@@ -469,6 +452,8 @@ a img{
   }
 
 .cyclop-event-container {
+  max-width: 1044px;
+  text-align: center;
 }
   .cyclop-event-box {
     background-color: #f26522;
@@ -638,7 +623,7 @@ a img{
   }
 
   .cyclop-be-together-section {
-    height: 350px;
+    height: 550px;
   }
 
   .cyclop-slogan {
@@ -656,6 +641,9 @@ a img{
   .asbl-info {
     padding-top: 200px;
     font-size: 16px;
+  }
+  .cyclop-vzw {
+    width: 150px;
   }
 
   . img {
