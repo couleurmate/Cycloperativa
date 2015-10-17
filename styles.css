@@ -644,8 +644,15 @@ a img{
   .cyclop-vzw {
     width: 150px;
   }
-
-  . img {
+  .cyclop-asbl-image {
+    width: 70px;
+    height: 70px;
+  }
+  .cyclop-asbl-image:hover {
+    width: 75px;
+    height: 75px;
+  }
+  .img {
     height: 12px;
   }
 
