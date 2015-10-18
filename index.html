@@ -30,7 +30,7 @@
           <div class="cyclop-navigation-container">
             <nav class="cyclop-navigation mdl-navigation">
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#asbl">Het concept</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">L’équipe</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#cyclopes">L’équipe</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#bier">Commandes</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#contact">Contact</a>
             </nav>
@@ -45,95 +45,100 @@
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="index.html#asbl">Het Concept</a>
           <div class="cyclop-drawer-separator"></div>
-          <span hidden class="mdl-navigation__link" href="">Versions</span>
-          <a class="mdl-navigation__link" href="">Het Atelier</a>
-          <a class="mdl-navigation__link" href="">De Cyclopes</a>
+          <a class="mdl-navigation__link" href="index.html#atelier">Het Atelier</a>
+          <a class="mdl-navigation__link" href="index.html#cyclopes">De Cyclopes</a>
           <a class="mdl-navigation__link" href="">Vélo</a>
           <div class="cyclop-drawer-separator"></div>
-          <span hidden class="mdl-navigation__link" href="">Resources</span>
-          <a class="mdl-navigation__link" href="">Bier</a>
-          <a class="mdl-navigation__link" href="">Cyclopagenda</a>
-          <a class="mdl-navigation__link" href="">Contact</a>
+          <a class="mdl-navigation__link" href="index.html#bier">Bier</a>
+          <a class="mdl-navigation__link" href="index.html#agenda">Cyclopagenda</a>
+          <a class="mdl-navigation__link" href="index.html#contact">Contact</a>
         </nav>
       </div>
 
       <div class="cyclop-content mdl-layout__content">
         <a name="top"></a>
         <div class="cyclop-be-together-section mdl-typography--text-center">
-          <span class="cyclop-be-together-text">
+          <div class="cyclop-be-together-text">
             <div class="cyclop-font cyclop-slogan">Het fiets atelier vélo van de quartier Anneessens</div>
-            <div class="cyclop-font cyclop-sub-slogan">open chaque lundi van 18 heures tot 21 uur <br> @ <a href="carte.html">rue du Midistraat 165a</a></div>
-          </span>
+            <div class="cyclop-font cyclop-sub-slogan">open chaque lundi van 18 heures tot 21 uur <br>
+              <p class="cyclop-sub-slogan cyclop-sub-location"><i class="material-icons">directions_bike</i> <span id="andere"><a href="carte.html" class="cyclop-sub-location">rue du Midistraat 165a</a></span></p>
+              <span class="mdl-tooltip" for="andere">Ma allez, er zijn plein d'autres ateliers participatifs</span>
+            </div>
+          </div>
         </div>
 
         <div class="cyclop-asbl-section mdl-typography--text-center">
-          <a name="asbl"></a>
+          <a class="push-link" name="asbl"></a>
           <div class="cyclop-sub-title">C’ESTKWAÇA?<br>WADESDA?</div>
             <div class="asbl-font asbl-info">Cycloperativa is een association van Bruxellois(es)
               <br>waar on apprend à réparer des vélos et travailler en cooperation
               <br>Ainsi, on lutte contre l’impact de la domination de la voiture et de la competition dans notre vi(ll)e
             </div>
-          <div class="cyclop-asbl">
-            <div class="cyclop-atelier cyclop-asbl">
+          <div class="cyclop-asbl mdl-grid">
+            <div class="cyclop-vzw mdl-cell mdl-cell--3-col mdl-cell--1-col-phone">
               <a class="cyclop-image-link" href="#atelier">
                 <img class="cyclop-asbl-image cyclop-asbl-atelier" src="images/atelier.png">
               </a>
               <a class="cyclop-link mdl-typography--font-regular mdl-typography--text-uppercase" href="#atelier">Het atelier</a>
             </div>
-            <div class="cyclop-velo cyclop-asbl">
+            <div class="cyclop-vzw mdl-cell mdl-cell--3-col mdl-cell--1-col-phone">
               <a class="cyclop-image-link" href="#velo">
                 <img class="cyclop-asbl-image cyclop-asbl-velo" src="images/velo.png">
               </a>
               <a class="cyclop-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Vélo</a>
             </div>
-            <div class="cyclop-equipe cyclop-asbl">
-              <a class="cyclop-image-link" href="">
+            <div class="cyclop-vzw mdl-cell mdl-cell--3-col mdl-cell--1-col-phone">
+              <a class="cyclop-image-link" href="#cyclope">
                 <img class="cyclop-asbl-image cyclop-asbl-equipe" src="images/cyclope.png">
               </a>
               <a class="cyclop-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Les cyclopes</a>
             </div>
-            <div class="cyclop-bier cyclop-asbl">
-              <a class="cyclop-image-link" href="">
-                <img class="cyclop-asbl-image cyclop-asbl-bier" src="images/bier.png">
+            <div class="cyclop-vzw mdl-cell mdl-cell--3-col mdl-cell--1-col-phone">
+              <a class="cyclop-image-link" href="#bier">
+                <img class="cyclop-asbl-image cyclop-bier-image" src="images/bier.png">
               </a>
               <a class="cyclop-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Bier</a>
             </div>
           </div>
+        </div>
+
           <div class="cyclop-atelier-separation">
-            <a name="atelier"></a>
-            <div class="cyclop-sub-title">Atelier</div>
+            <div class="cyclop-sub-title"><a class="push-link" name="atelier">Atelier</a></div>
           </div>
+          <div class="cyclop-atelier-band-text upper-text">
+              <p>We hebben een lokaal in de quartier Anneessens
+                <br>Allez, ‘t is te zeggen op de rand ervan, en juist op de rand met de Marollen
+                <br>'t is in de Rue du Midi 165a, dichtbij place Rouppe
+                <br>On adore le quartier et ses habitants, car on y retrouve la vie. Vous pouvez nous trouver (presque) elke maandag vanaf 18h tot ongeveer 20h
+                <br>dans le local ou à l’extérieur, avec les kets et les adultes du quartier
+              </p>
+          </div>
+          <div class="cyclop-atelier-back"></div>
           <div class="cyclop-atelier-section">
             <div class="cyclop-atelier-band">
-              <div class="cyclop-atelier-band-text">
-                <p>
-                  We hebben een lokaal in de quartier Anneessens
-                  <br>Allez, ‘t is te zeggen op de rand ervan, en juist op de rand met de Marollen
-                  <br>'t is in de Rue du Midi 165a, dichtbij place Rouppe
-                  <br>On adore le quartier et ses habitants, car on y retrouve la vie. Vous pouvez nous trouver (presque) elke maandag vanaf 18h tot ongeveer 20h
-                  <br>dans le local ou à l’extérieur, avec les kets et les adultes du quartier
-                  <br><br>Maar we bougeren ook dans tout les coins (de Bruxelles)
-                  <br>Les mercredis après-midi, nous assistons des associations de l’Aide à la jeunesse en Milieu Ouvert (AMO)
-                  <br>pour faciliter l’apprentisage des kets d’un tas des choses, à travers la mécanique vélo
-                </p>
+              <div class="cyclop-atelier-band-text lower-text">
+                <p>Maar we bougeren ook dans tout les coins (de Bruxelles)
+                  <br>Les mercredis après-midi, nous aidons des associations de l’Aide à la jeunesse en Milieu Ouvert (AMO)
+                  <br>Durant des évènements : Alternatiba, Fête de la Charge, Marché Vélo</p>
               </div>
             </div>
           </div>
+
           <div class="cyclop-cyclopes-section">
             <div class="cyclop-cyclopes-bad">
               <div class="cyclop-cyclopes-band-text">
-                <div class="cyclop-sub-title">De Cyclopes</div>
-                <p>
-                  La storyline
-                  <br>L’équipe, les amis
+                <div class="cyclop-sub-title"><a class="push-link" name="cyclopes">De Cyclopes</a></div>
+                <h3>Une équipe de bénévoles</h3>
+                <p> Inès, Benjamin, Sem, Ciske, Caspar, Yannick, Jeroen, Sacha, Grégoire, Juan
                 </p>
               </div>
             </div>
           </div>
+
           <div class="cyclop-customized-section">
             <div class="cyclop-customized-section-text">
               <a name="bier"></a>
-              <div class="cyclop-sub-title">Bier</div>
+              <div class="cyclop-sub-title"><a class="push-link" name="bier">Bier</a></div>
               <p>
                 Pour récolter des fonds pour payer un loyer ET pour fêter le lancement de notre nouveau logo
                 <br>quoi de mieux que de vendre une bière étiquettée à notre nom par la brasserie de la Senne !
@@ -146,10 +151,10 @@
                 </a>
               </p>
             </div>
-            <div class="cyclop-customized-section-image"></div>
           </div>
+
           <div class="cyclop-more-section">
-            <div class="cyclop-sub-title">Cyclopagenda</div>
+            <div class="cyclop-sub-title"><a class="push-link" name="agenda">Cyclopagenda</a></div>
 
             <!-- Event card -->
             <div class="cyclop-event-container mdl-grid">
@@ -158,16 +163,16 @@
                   <h3 class="cyclop-event-title-font">Atelier</h3>
                 </div>
                 <div class="mdl-cell mdl-cell--12-col mdl-color-text--white cyclop-event-place">
-                  <p class="cyclop-event-title-font">@Cycloperativa</p>
+                  <p class="cyclop-event-title-font">Cycloperativa</p>
                 </div>
                 <div class="mdl-cell mdl-cell--12-col mdl-color-text--black cyclop-event-date">
                   <p class="cyclop-event-date-font">
-                    Lundi/Maandag<br>
+                    Lundis/s'Maandag<br>
                     de 18h tot 21u
                   </p>
                 </div>
                 <div class="mdl-cell mdl-cell--12-col cyclop-event-button">
-                  <a class="mdl-button mdl-color--white mdl-js-button mdl-js-ripple-effect button-event">
+                  <a class="mdl-button mdl-js-button mdl-js-ripple-effect button-event">
                     <i class="material-icons">event</i>
                     Viens ket !
                   </a>
@@ -176,16 +181,19 @@
 
               <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-shadow--3dp cyclop-event-box">
                 <div class="mdl-cell mdl-cell--12-col mdl-color-text--white cyclop-event-title">
-                    <h3 class="cyclop-event-title-font">Marché vélo</h3>
+                  <h3 class="cyclop-event-title-font">Visite</h3>
+                </div>
+                <div class="mdl-cell mdl-cell--12-col mdl-color-text--white cyclop-event-place">
+                  <p class="cyclop-event-title-font">Allée du Kaai</p>
                 </div>
                 <div class="mdl-cell mdl-cell--12-col mdl-color-text--black cyclop-event-date">
-                  <h4>
-                    20/10<br>
-                    de 16h tot 21u
-                  </h4>
+                  <p class="cyclop-event-date-font">
+                    24/10<br>
+                    vanaf 13h
+                  </p>
                 </div>
                 <div class="mdl-cell mdl-cell--12-col cyclop-event-button">
-                  <a class="mdl-button mdl-color--white mdl-js-button mdl-js-ripple-effect button-event">
+                  <a class="mdl-button mdl-js-button mdl-js-ripple-effect button-event">
                     <i class="material-icons">event</i>
                     Viens ket !
                   </a>
@@ -194,16 +202,18 @@
 
               <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-shadow--3dp cyclop-event-box">
                 <div class="mdl-cell mdl-cell--12-col mdl-color-text--white cyclop-event-title">
-                    <h3 class="cyclop-event-title-font">Marché vélo</h3>
+                  <h3 class="cyclop-event-title-font">Marché vélo</h3>
+                </div>
+                <div class="mdl-cell mdl-cell--12-col mdl-color-text--white cyclop-event-place">
+                  <p class="cyclop-event-title-font">Beursschouwburg</p>
                 </div>
                 <div class="mdl-cell mdl-cell--12-col mdl-color-text--black cyclop-event-date">
-                  <h4>
-                    20/10<br>
-                    de 16h tot 21u
-                  </h4>
+                  <p class="cyclop-event-date-font">
+                    20/10<br>de 16h tot 21u
+                  </p>
                 </div>
                 <div class="mdl-cell mdl-cell--12-col cyclop-event-button">
-                  <a class="mdl-button mdl-color--white mdl-js-button mdl-js-ripple-effect button-event">
+                  <a class="mdl-button mdl-js-button mdl-js-ripple-effect button-event">
                     <i class="material-icons">event</i>
                     Viens ket !
                   </a>
@@ -212,22 +222,25 @@
 
               <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-shadow--3dp cyclop-event-box">
                 <div class="mdl-cell mdl-cell--12-col mdl-color-text--white cyclop-event-title">
-                    <h3 class="cyclop-event-title-font">Vélo Jackpot!</h3>
+                  <h3 class="cyclop-event-title-font">Vélo Jackpot!</h3>
+                </div>
+                <div class="mdl-cell mdl-cell--12-col mdl-color-text--white cyclop-event-place">
+                  <p class="cyclop-event-title-font">Cycloperativa</p>
                 </div>
                 <div class="mdl-cell mdl-cell--12-col mdl-color-text--black cyclop-event-date">
-                  <h4>
-                    27/10<br>
-                    de 19h tot 22u
-                  </h4>
+                  <p class="cyclop-event-date-font">
+                    27/10<br>de 19h tot 22u
+                  </p>
                 </div>
                 <div class="mdl-cell mdl-cell--12-col cyclop-event-button">
-                  <a class="mdl-button mdl-color--white mdl-js-button mdl-js-ripple-effect button-event">
+                  <a class="mdl-button mdl-js-button mdl-js-ripple-effect button-event">
                     <i class="material-icons">event</i>
                     Viens ket !
                   </a>
                 </div>
               </div>
             </div>
+          </div>
 
           <div class="mdl-mega-footer--top-section">
             <footer class="cyclop-footer mdl-mega-footer">
@@ -236,7 +249,7 @@
                   <i class="material-icons md-36">expand_less</i>
                 </a>
               </div>
-              <a name="contact"></a>
+              <a class="push-link" name="contact"></a>
               <div class="cyclop-sub-title">Contact</div>
               <div class="cyclop-sub-slogan">open chaque lundi van 18 heures tot 21 uur
                 <br> @ rue du Midistraat 165a
@@ -247,13 +260,13 @@
                 <a href="https://www.facebook.com/Cycloperativa" title="Partage op Facebook" target="_blank" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-button--facebook">
                   <i class="fa fa-facebook fa-fw"></i>
                 </a>
-                <a href="" title="Stuur een message" target="_blank" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-button--mail">
+                <a href="mailto:pedal-cycloperativa@lists.collectifs.net" title="Stuur een message" target="_blank" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-button--mail">
                   <i class="fa fa-envelope-o fa-fw"></i>
                 </a>
               </div>
             </div>
 
-            <div class="mdl-mega-footer--bottom-section">
+            <div class="cyclop-footer mdl-mega-footer--bottom-section">
               <p class="mdl-typography--font-light">vzw Cycloperativa asbl 2015</p>
               <div class="">
                 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>

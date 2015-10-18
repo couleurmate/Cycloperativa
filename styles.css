@@ -176,6 +176,13 @@ a img{
 	  height: 150px;
 	  width: 150px;
   }
+.push-link {
+  height: 45px;
+  display: block;
+}
+.cyclop-content {
+  height: 100%;
+}
 
 .cyclop-be-together-section {
   position: relative;
@@ -188,8 +195,10 @@ a img{
  }
 
 .cyclop-be-together-text {
-  top: 580px; /* Fix */
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   width: auto;
 }
   .cyclop-font {
@@ -207,6 +216,13 @@ a img{
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  .cyclop-sub-location {
+    text-decoration: none;
+    color: #f26522;
+    vertical-align: top;
+  }
+    .cyclop-sub-location:hover {
+    }
 
   .mdl-mega-footer {
     color: #000000;
@@ -226,6 +242,7 @@ a img{
   box-shadow: 4px 4px #7f9b4e;
   color: #ffffff;
   text-shadow: 3px 3px #93311f;
+  text-align: center;
 }
 
 .asbl-info {
@@ -244,13 +261,12 @@ a img{
 .cyclop-asbl-section {
   position: relative;
   background-color: #a5bc7e;
-  padding-top: 24px;
-  padding-bottom: 80px;
-}
+  }
 
 .cyclop-asbl {
   text-align: center;
   width: 100%;
+  max-width: 900px;
   white-space: nowrap;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -258,16 +274,11 @@ a img{
   padding-bottom: 10px;
 }
 
-.cyclop-asbl {
-  text-align: center;
-}
-
   .cyclop-asbl-image {
     z-index: 1;
     border-radius: 25px 25px 25px 25px;
     width: 140px;
     height: 140px;
-    padding: 10px;
     background: #ffffff;
     -webkit-transition: width 0.5s, height 0.5s; /* For Safari 3.1 to 6.0 */
     transition: width 0.5s, height 0.5s;
@@ -288,44 +299,35 @@ a img{
   text-decoration: none;
 }
 
-.cyclop-atelier {
+.cyclop-vzw {
   display: inline-block;
-  width: 300px;
-  margin-right: 5px;
-}
-
-.cyclop-velo {
-    display: inline-block;
-    width: 300px;
-    margin-right: 5px;
-  }
-
-.cyclop-bier {
-  display: inline-block;
-  width: 300px;
-  margin-right: 5px;
-}
-
-.cyclop-equipe {
-  display: inline-block;
-  width: 300px;
-  margin-right: 5px;
+  width: 200px;
 }
 
 .cyclop-atelier-separation {
   position: relative;
-  background: url('images/brux.png') center 30% no-repeat scroll;
+  height: auto;
+  padding:  24px;
+  z-index: 1;
+  background-color: #fff;
+  }
+.cyclop-atelier-back {
+  height: 400px;
+  width: 100%;
+  background: url('images/brux.png') center 50%;
+  background-attachment: local;
+  background-repeat: no-repeat;
   background-color: #ffffff;
   background-size: cover;
-  height: 600px;
-  padding-top:  24px;
-  }
+  z-index: -1;
+}
 
 .cyclop-atelier-section {
   position: relative;
   }
     .cyclop-atelier-band {
   width: 100%;
+  height: 100%;
   text-align: center;
   background-color: #f26522;
     }
@@ -334,17 +336,19 @@ a img{
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  text-align: left;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 24px;
+  text-align: center;
     }
-
-  .cyclop-atelier-band-text p {
-    padding-top: 8px;
-    font-size: 21px;
-  }
+    .cyclop-atelier-band-text p {
+      font-size: 21px;
+    }
+      .cyclop-atelier-band-text.upper-text p {
+        color: #618834;
+        margin-top: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    .cyclop-atelier-band-text.lower-text p {
+      color: #fff;
+    }
 
 .cyclop-cyclopes-section {
     position: relative;
@@ -417,8 +421,9 @@ a img{
       }
 
     .mdl-button.mdl-button--soutien {
-          background: #f26522;
-          color: #ffffff;
+      background: #f26522;
+      color: #ffffff;
+      font-size: large;
       }
     .mdl-button--soutien:hover {
       background-color: #8f3d16;
@@ -435,9 +440,9 @@ a img{
 
 .cyclop-more-section {
   padding: 24px;
-  max-width: 1044px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #a5bc7e;
 }
 
   .cyclop-more-section .cyclop-section-title {
@@ -446,6 +451,8 @@ a img{
   }
 
 .cyclop-event-container {
+  max-width: 1044px;
+  text-align: center;
 }
   .cyclop-event-box {
     background-color: #f26522;
@@ -456,8 +463,8 @@ a img{
     display: inline-block;
   }
     .cyclop-event-title-font {
-      font-size: 30px;
-      font-family: Nunito; 
+      font-size: 25px;
+      font-family: Nunito;
     }
   .cyclop-event-place {
     height: 40px;
@@ -474,10 +481,18 @@ a img{
     height: 40px;
     display: inline-block;
   }
+    .button-event {
+      color: #fff;
+      background: #a5bc7e;
+    }
+    .mdl-button .button-event:hover {
+      background-color: #1f3054;
+    }
 
 .cyclop-footer {
   background-color: #fafafa;
   position: relative;
+  text-align: center;
 }
 
   .cyclop-footer a:hover {
@@ -492,8 +507,11 @@ a img{
     border-bottom: none;
   }
 
-  .cyclop-footer .mdl-mega-footer--bottom-section {
+  .cyclop-footer.mdl-mega-footer--bottom-section {
     position: relative;
+    background-color: #a5bc7e;
+    margin: 0;
+    padding-bottom: 16px;
   }
 
   .cyclop-footer .mdl-mega-footer--bottom-section a {
@@ -604,7 +622,7 @@ a img{
   }
 
   .cyclop-be-together-section {
-    height: 350px;
+    height: 550px;
   }
 
   .cyclop-slogan {
@@ -623,8 +641,18 @@ a img{
     padding-top: 200px;
     font-size: 16px;
   }
-
-  . img {
+  .cyclop-vzw {
+    width: 150px;
+  }
+  .cyclop-asbl-image {
+    width: 70px;
+    height: 70px;
+  }
+  .cyclop-asbl-image:hover {
+    width: 75px;
+    height: 75px;
+  }
+  .img {
     height: 12px;
   }
 
