@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Geo', sans-serif;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: 'Nunito', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Josefin Sans', 'Helvetica', 'Arial', sans-serif;
 }
 
 a {
@@ -149,13 +149,13 @@ a img{
 }
 
   .cyclop-drawer-separator {
-    height: 1px;
+    height: 3px;
     background-color: #f26522;
     margin: 8px 0;
   }
 
   .cyclop-drawer .mdl-navigation__link.mdl-navigation__link {
-    font-size: 14px;
+    font-size: 20px;
     color: #757575;
   }
 
@@ -285,8 +285,6 @@ a img{
   }
 
   .cyclop-asbl-image:hover {
-  width: 145px;
-  height: 145px;
   }
 
 .cyclop-asbl .cyclop-link {
@@ -348,6 +346,7 @@ a img{
       }
     .cyclop-atelier-band-text.lower-text p {
       color: #fff;
+      padding-top: 10px;
     }
 
 .cyclop-cyclopes-section {
@@ -464,7 +463,7 @@ a img{
   }
     .cyclop-event-title-font {
       font-size: 25px;
-      font-family: Nunito;
+      font-family: Josefin Sans;
     }
   .cyclop-event-place {
     height: 40px;
@@ -528,10 +527,14 @@ a img{
 
 .carte {
   padding: 0px;
-  border-style: outset;
+  border-style: solid;
   border-color: #f26522;
+  box-shadow: 8px 8px #7f9b4e;
   border-width: 10px;
 }
+  .carte-text{
+    font-size: 18px;
+  }
 
   .mdl-button--fab {
       text-transform: lowercase;
@@ -592,8 +595,8 @@ a img{
   }
 
   .cyclop-title {
-    display: none !important;
-    font-family: 'Impact', 'Charcoal', 'Arial', sans-serif;
+    font-size: 30px;
+    width: 200px;
   }
 
   .cyclop-mobile-title {
@@ -648,10 +651,11 @@ a img{
     width: 70px;
     height: 70px;
   }
-  .cyclop-asbl-image:hover {
-    width: 75px;
-    height: 75px;
+  .cyclop-link {
+    max-width: 70px;
   }
+  .cyclop-asbl-image:hover {
+    }
   .img {
     height: 12px;
   }
