@@ -148,16 +148,15 @@ a img{
   border-right: none;
 }
 
-  .cyclop-drawer-separator {
-    height: 3px;
-    background-color: #f26522;
-    margin: 8px 0;
-  }
-
   .cyclop-drawer .mdl-navigation__link.mdl-navigation__link {
     font-size: 20px;
-    color: #757575;
+    color: #7f9b4e;
+    padding: 12px 40px;
   }
+    .cyclop-drawer .mdl-navigation__link.mdl-navigation__link:hover {
+      background-color: #f26522;
+      color: #fff;
+    }
 
   .cyclop-drawer span.mdl-navigation__link.mdl-navigation__link {
     color: #8bc34a;
@@ -537,55 +536,71 @@ a img{
 }
   .carte-text{
     font-size: 18px;
+    text-align: justify;
   }
 
+  .social-buttons {
+    text-align: center;
+  }
   .mdl-button--fab {
       text-transform: lowercase;
+    }
+    .fa.fa-facebook.fa-2x {
       font-size: 36px;
-      line-height: 150%;
+      vertical-align: -50%;
     }
-    .mdl-button.mdl-button--facebook {
-      color: rgb(63, 81, 181);
+    .fa.fa-facebook.fa-lg {
+      font-size: 24px;
     }
-    .mdl-button.mdl-button--facebook:focus:not(:active) {
-      background-color: #3b5998;
-    }
-    .mdl-button--fab.mdl-button--facebook {
-      background: #3b5998;
-      color: #ffffff;
-    }
-    .mdl-button--fab.mdl-button--facebook:hover {
-      background-color: #1f3054;
-    }
-    .mdl-button--fab.mdl-button--facebook:focus:not(:active) {
-      background-color: #3b5998;
-    }
-    .mdl-button--fab.mdl-button--facebook:active {
-      background-color: #3b5998;
-    }
-    .mdl-button--fab.mdl-button--facebook .mdl-ripple {
-      background: rgb(255, 255, 255);
-    }
+      .mdl-button.mdl-button--facebook {
+        color: rgb(63, 81, 181);
+      }
+      .mdl-button.mdl-button--facebook:focus:not(:active) {
+        background-color: #3b5998;
+      }
+      .mdl-button--fab.mdl-button--facebook {
+        background: #3b5998;
+        color: #ffffff;
+      }
+      .mdl-button--fab.mdl-button--facebook:hover {
+        background-color: #1f3054;
+      }
+      .mdl-button--fab.mdl-button--facebook:focus:not(:active) {
+        background-color: #3b5998;
+      }
+      .mdl-button--fab.mdl-button--facebook:active {
+        background-color: #3b5998;
+      }
+      .mdl-button--fab.mdl-button--facebook .mdl-ripple {
+        background: rgb(255, 255, 255);
+      }
 
-    .mdl-button.mdl-button--mail:focus:not(:active) {
-        background-color: #a5bc7e;
+    .fa.fa-envelope-o.fa-2x {
+      font-size: 36px;
+      vertical-align: -50%;
     }
-    .mdl-button--fab.mdl-button--mail {
-        background: #a5bc7e;
-        color: rgb(255, 255, 255);
+    .fa.fa-envelope-o.fa-lg{
+      font-size: 24px;
     }
-    .mdl-button--fab.mdl-button--mail:hover {
-        background-color: #607044;
-    }
-    .mdl-button--fab.mdl-button--mail:focus:not(:active) {
-        background-color: #a5bc7e;
-    }
-    .mdl-button--fab.mdl-button--mail:active {
-        background-color: #a5bc7e;
-    }
-    .mdl-button--fab.mdl-button--mail .mdl-ripple {
-    background: rgb(255, 255, 255);
-    }
+      .mdl-button.mdl-button--mail:focus:not(:active) {
+          background-color: #a5bc7e;
+      }
+      .mdl-button--fab.mdl-button--mail {
+          background: #a5bc7e;
+          color: rgb(255, 255, 255);
+      }
+      .mdl-button--fab.mdl-button--mail:hover {
+          background-color: #607044;
+      }
+      .mdl-button--fab.mdl-button--mail:focus:not(:active) {
+          background-color: #a5bc7e;
+      }
+      .mdl-button--fab.mdl-button--mail:active {
+          background-color: #a5bc7e;
+      }
+      .mdl-button--fab.mdl-button--mail .mdl-ripple {
+      background: rgb(255, 255, 255);
+      }
 
 .cyclop-link-menu:hover {
   cursor: pointer;
