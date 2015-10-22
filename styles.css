@@ -10,6 +10,7 @@ body {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 /* Disable ugly boxes around images in IE10 */
 a img{
@@ -146,6 +147,7 @@ a img{
 
 .cyclop-drawer {
   border-right: none;
+  width: 200px;
 }
 
   .cyclop-drawer .mdl-navigation__link.mdl-navigation__link {
@@ -166,10 +168,13 @@ a img{
     position: relative;
     background: #8DAA5D;
     height: 160px;
+    padding: 0;
   }
 
     .cyclop-drawer .cyclop-logo-image {
-      position: absolute;
+    position: absolute;
+    margin-left: 25px;
+    margin-right: 25px;
 	  top: 5px;
 	  bottom: 5px;
 	  height: 150px;
@@ -260,12 +265,13 @@ a img{
 .cyclop-asbl-section {
   position: relative;
   background-color: #a5bc7e;
+  width: 100%
   }
 
 .cyclop-asbl {
-  text-align: center;
+  box-sizing: border-box;
   width: 100%;
-  max-width: 900px;
+  max-width: 450px;
   white-space: nowrap;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -496,10 +502,6 @@ a img{
   text-align: center;
 }
 
-  .cyclop-footer a:hover {
-    color: #f26522;
-  }
-
   .cyclop-footer .mdl-mega-footer--top-section::after {
     border-bottom: none;
   }
@@ -546,38 +548,38 @@ a img{
       text-transform: lowercase;
     }
     .fa.fa-facebook.fa-2x {
-      font-size: 36px;
-      vertical-align: -50%;
+      vertical-align: middle;
     }
     .fa.fa-facebook.fa-lg {
       font-size: 24px;
     }
       .mdl-button.mdl-button--facebook {
         color: rgb(63, 81, 181);
+        background-color: #a5bc7e;
       }
       .mdl-button.mdl-button--facebook:focus:not(:active) {
         background-color: #3b5998;
       }
-      .mdl-button--fab.mdl-button--facebook {
+      .mdl-button.mdl-button--facebook {
         background: #3b5998;
         color: #ffffff;
       }
-      .mdl-button--fab.mdl-button--facebook:hover {
+      .mdl-button.mdl-button--facebook:hover {
         background-color: #1f3054;
+        color: #f26522;
       }
-      .mdl-button--fab.mdl-button--facebook:focus:not(:active) {
+      .mdl-button.mdl-button--facebook:focus:not(:active) {
         background-color: #3b5998;
       }
-      .mdl-button--fab.mdl-button--facebook:active {
+      .mdl-button.mdl-button--facebook:active {
         background-color: #3b5998;
       }
-      .mdl-button--fab.mdl-button--facebook .mdl-ripple {
+      .mdl-button.mdl-button--facebook .mdl-ripple {
         background: rgb(255, 255, 255);
       }
 
     .fa.fa-envelope-o.fa-2x {
-      font-size: 36px;
-      vertical-align: -50%;
+      vertical-align: middle;
     }
     .fa.fa-envelope-o.fa-lg{
       font-size: 24px;
@@ -585,20 +587,21 @@ a img{
       .mdl-button.mdl-button--mail:focus:not(:active) {
           background-color: #a5bc7e;
       }
-      .mdl-button--fab.mdl-button--mail {
-          background: #a5bc7e;
+      .mdl-button.mdl-button--mail {
+          background-color: #a5bc7e;
           color: rgb(255, 255, 255);
       }
-      .mdl-button--fab.mdl-button--mail:hover {
+      .mdl-button.mdl-button--mail:hover {
+          color: #f26522;
           background-color: #607044;
       }
-      .mdl-button--fab.mdl-button--mail:focus:not(:active) {
+      .mdl-button.mdl-button--mail:focus:not(:active) {
           background-color: #a5bc7e;
       }
-      .mdl-button--fab.mdl-button--mail:active {
+      .mdl-button.mdl-button--mail:active {
           background-color: #a5bc7e;
       }
-      .mdl-button--fab.mdl-button--mail .mdl-ripple {
+      .mdl-button.mdl-button--mail .mdl-ripple {
       background: rgb(255, 255, 255);
       }
 
@@ -610,6 +613,11 @@ a img{
 @media (max-width: 900px) {
   .cyclop-navigation-container {
     display: none;
+  }
+
+  .cyclop-drawer .cyclop-logo-image {
+    .height: 100px;
+    .width: 100px;
   }
 
   .cyclop-title {
@@ -663,19 +671,19 @@ a img{
     font-size: 16px;
   }
   .cyclop-vzw {
-    width: 150px;
+    width: 200px;
   }
   .cyclop-asbl-image {
     width: 70px;
     height: 70px;
   }
-  .cyclop-link {
-    max-width: 70px;
-  }
   .cyclop-asbl-image:hover {
     }
   .img {
     height: 12px;
+  }
+  .cyclop-link {
+    max-width: 70px;
   }
 
   .cyclop-fab {
