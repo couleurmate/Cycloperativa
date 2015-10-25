@@ -1,693 +1,644 @@
 @font-face {
-  font-family: 'Geo', sans-serif;
-  font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Geo', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 }
-
 body {
-  margin: 0;
-  font-family: 'Josefin Sans', 'Helvetica', 'Arial', sans-serif;
+	margin: 0;
+	font-family: 'Josefin Sans', 'Helvetica', 'Arial', sans-serif;
+  line-height: 2rem;
 }
-
 a {
-  color: inherit;
+	color: inherit;
+	text-decoration: none;
 }
+
 /* Disable ugly boxes around images in IE10 */
-a img{
-  border: 0px;
-}
 
+a img {
+	border: 0px;
+}
 ::-moz-selection {
-  background-color: #ffffff;
-  color: #f26522;
+	background-color: #ffffff;
+	color: #f26522;
 }
-
 ::selection {
-  background-color: #ffffff;
-  color: #f26522;
+	background-color: #ffffff;
+	color: #f26522;
 }
-
 .material-icons.md-36 {
-  font-size: 36px;
+	font-size: 36px;
 }
-
 .cyclop-search-box .mdl-textfield__input {
-  color: rgba(0, 0, 0, 0.87);
+	color: rgba(0, 0, 0, 0.87);
 }
-
 .cyclop-header .mdl-menu__container {
-  z-index: 50;
-  margin: 0 !important;
+	z-index: 50;
+	margin: 0 !important;
 }
-
-
 .mdl-textfield--expandable {
-  width: auto;
+	width: auto;
 }
-
 .cyclop-mobile-title {
-  display: none !important;
+	display: none !important;
 }
-
 .cyclop-title {
-  display: block !important;
-  font-family: 'Geo', 'Impact', sans-serif;
-  text-align: center;
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 40px;
-  text-shadow: 3px 3px #93311f;
-  background-color: #a5bc7e;
-  width: 280px;
-  box-shadow: 4px 4px #7f9b4e;
-  text-transform: uppercase;
+	display: block !important;
+	font-family: 'Geo', 'Impact', sans-serif;
+	text-align: center;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 40px;
+	text-shadow: 3px 3px #93311f;
+	background-color: #a5bc7e;
+	width: 280px;
+	box-shadow: 4px 4px #7f9b4e;
+	text-transform: uppercase;
 }
-
 .cyclop-header {
-  overflow: visible;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
+	overflow: visible;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
 }
-
-  .cyclop-header .material-icons {
-    color: #8daa5d !important;
-    font-size: 24px;
-  }
-
-  .cyclop-header .mdl-layout__drawer-button {
-    background: transparent;
-    color: #000000;
-  }
-
-  .cyclop-header .mdl-navigation__link {
-    font-family: 'Geo', 'Impact', sans-serif;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 20px;
-    text-shadow: 3px 3px #93311f;
-  }
-
-  .cyclop-navigation-container {
-    /* Simple hack to make the overflow happen to the left instead... */
-    direction: rtl;
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1;
-    width: 500px;
-    -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-            transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .cyclop-navigation {
-    /* ... and now make sure the content is actually LTR */
-    direction: ltr;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    width: 800px;
-  }
-
-  .cyclop-search-box.is-focused ~ .cyclop-navigation-container {
-    opacity: 0;
-    width: 100px;
-  }
-
-
-  .cyclop-navigation .mdl-navigation__link {
-    display: inline-block;
-    height: 60px;
-    line-height: 68px;
-    background-color: transparent !important;
-    border-bottom: 4px solid transparent;
-  }
-
-    .cyclop-navigation .mdl-navigation__link:hover {
-      border-bottom: 4px solid #8bc34a;
-    }
-
-  .cyclop-search-box {
-    -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
-        -ms-flex-order: 2;
-            order: 2;
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-
-  .cyclop-more-button {
-    -webkit-box-ordinal-group: 4;
-    -webkit-order: 3;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-
-
+.cyclop-header .material-icons {
+	color: #8daa5d !important;
+	font-size: 24px;
+}
+.cyclop-header .mdl-layout__drawer-button {
+	background: transparent;
+	color: #000000;
+}
+.cyclop-header .mdl-navigation__link {
+	font-family: 'Geo', 'Impact', sans-serif;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 20px;
+	text-shadow: 3px 3px #93311f;
+}
+.cyclop-navigation-container {
+	/* Simple hack to make the overflow happen to the left instead... */
+	direction: rtl;
+	-webkit-box-ordinal-group: 2;
+	-webkit-order: 1;
+	-ms-flex-order: 1;
+	order: 1;
+	width: 500px;
+	-webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cyclop-navigation {
+	/* ... and now make sure the content is actually LTR */
+	direction: ltr;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	width: 800px;
+}
+.cyclop-search-box.is-focused ~ .cyclop-navigation-container {
+	opacity: 0;
+	width: 100px;
+}
+.cyclop-navigation .mdl-navigation__link {
+	display: inline-block;
+	height: 60px;
+	line-height: 68px;
+	background-color: transparent !important;
+	border-bottom: 4px solid transparent;
+}
+.cyclop-navigation .mdl-navigation__link:hover {
+	border-bottom: 4px solid #8bc34a;
+}
+.cyclop-search-box {
+	-webkit-box-ordinal-group: 3;
+	-webkit-order: 2;
+	-ms-flex-order: 2;
+	order: 2;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+.cyclop-more-button {
+	-webkit-box-ordinal-group: 4;
+	-webkit-order: 3;
+	-ms-flex-order: 3;
+	order: 3;
+}
 .cyclop-drawer {
-  border-right: none;
+	border-right: none;
+	width: 200px;
 }
-
-  .cyclop-drawer .mdl-navigation__link.mdl-navigation__link {
-    font-size: 20px;
-    color: #7f9b4e;
-    padding: 12px 40px;
-  }
-    .cyclop-drawer .mdl-navigation__link.mdl-navigation__link:hover {
-      background-color: #f26522;
-      color: #fff;
-    }
-
-  .cyclop-drawer span.mdl-navigation__link.mdl-navigation__link {
-    color: #8bc34a;
-  }
-
-  .cyclop-drawer .mdl-layout-title {
-    position: relative;
-    background: #8DAA5D;
-    height: 160px;
-  }
-
-    .cyclop-drawer .cyclop-logo-image {
-      position: absolute;
-	  top: 5px;
-	  bottom: 5px;
-	  height: 150px;
-	  width: 150px;
-  }
+.cyclop-drawer .mdl-navigation__link.mdl-navigation__link {
+	font-size: 20px;
+	color: #7f9b4e;
+	padding: 12px 40px;
+}
+.cyclop-drawer .mdl-navigation__link.mdl-navigation__link:hover {
+	background-color: #f26522;
+	color: #fff;
+}
+.cyclop-drawer span.mdl-navigation__link.mdl-navigation__link {
+	color: #8bc34a;
+}
+.cyclop-drawer .mdl-layout-title {
+	position: relative;
+	background: #8DAA5D;
+	height: 160px;
+	padding: 0;
+}
+.cyclop-drawer .cyclop-logo-image {
+	position: absolute;
+	margin-left: 25px;
+	margin-right: 25px;
+	top: 5px;
+	bottom: 5px;
+	height: 150px;
+	width: 150px;
+}
 .push-link {
-  height: 45px;
-  display: block;
+	height: 45px;
+	display: block;
 }
 .cyclop-content {
-  height: 100%;
+	height: 100%;
 }
-
 .cyclop-be-together-section {
-  position: relative;
-  height: 700px;
-  background: url('images/cyclop-logoo.png') center 30% no-repeat scroll;
-  background-position: 50% 40px;
-  background-color: #F8F8F8;
-  background-size: contain;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
- }
-
+	position: relative;
+	height: 700px;
+	background: url('images/cyclop-logoo.png') center 30% no-repeat scroll;
+	background-position: 50% 40px;
+	background-color: #F8F8F8;
+	background-size: contain;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
+}
 .cyclop-be-together-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: auto;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: auto;
 }
-  .cyclop-font {
-    line-height: 1;
-    color: #618834;
-    font-weight: 300;
-  }
+.cyclop-font {
+	line-height: 1;
+	color: #618834;
+}
+.cyclop-slogan {
+	font-size: 40px;
+}
+.cyclop-sub-slogan {
+	font-size: 22px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.contact {
+  line-height: 2.5rem;
+  text-align: left;
+  padding-top: 35px;
+}
+.contact a {
+  color: #f26522;
+}
+.contact a:hover {
+  color: #a5bc7e;
+}
 
-  .cyclop-slogan {
-    font-size: 40px;
-  }
-
-  .cyclop-sub-slogan {
-    font-size: 22px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .cyclop-sub-location {
-    text-decoration: none;
-    color: #f26522;
-    vertical-align: top;
-  }
-    .cyclop-sub-location:hover {
-    }
-
-  .mdl-mega-footer {
-    color: #000000;
-  }
-
+.cyclop-sub-location {
+	text-decoration: none;
+	color: #f26522;
+	vertical-align: top;
+}
+.cyclop-sub-location:hover {}
+.mdl-mega-footer {
+	color: #000000;
+}
 .cyclop-sub-title {
-  height: auto;
-  width: 280px;
-  padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Geo', 'Helvetica', 'Arial', sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  line-height: 45px;
-  background-color: #f26522;
-  box-shadow: 4px 4px #7f9b4e;
-  color: #ffffff;
-  text-shadow: 3px 3px #93311f;
-  text-align: center;
+	height: auto;
+	width: 280px;
+	padding: 10px;
+	margin: 0 auto 4rem;
+	font-family: 'Geo', 'Helvetica', 'Arial', sans-serif;
+	font-size: 50px;
+	font-weight: 400;
+	line-height: 45px;
+	background-color: #f26522;
+	box-shadow: 4px 4px #7f9b4e;
+	color: #ffffff;
+	text-shadow: 3px 3px #93311f;
+	text-align: center;
 }
-
 .asbl-info {
-  font-size: 22px;
-  color: #ffffff;
-  padding-top: 10px;
-  padding-bottom: 20px;
+	font-size: 22px;
+	color: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
 }
-
-  .asbl-info a {
-    text-decoration: none;
-    color: #767777;
-    font-weight: 300;
-  }
-
+.asbl-info a {
+	text-decoration: none;
+	color: #767777;
+	font-weight: 300;
+}
 .cyclop-asbl-section {
-  position: relative;
-  background-color: #a5bc7e;
-  }
-
-.cyclop-asbl {
-  text-align: center;
-  width: 100%;
-  max-width: 900px;
-  white-space: nowrap;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-  .cyclop-asbl-image {
-    z-index: 1;
-    border-radius: 25px 25px 25px 25px;
-    width: 140px;
-    height: 140px;
-    background: #ffffff;
-  }
-
-    .cyclop-asbl-image:hover {
-      box-sizing: border-box;
-      border: 6px solid #f26522;
-    }
-
-  .cyclop-asbl-image-text {
-    margin-top: 15px;
-  }
-
-.cyclop-asbl .cyclop-link {
-  display: block;
-  z-index: 2;
-}
-
-.cyclop-image-link {
-  text-decoration: none;
-}
-
-.cyclop-vzw {
-  display: inline-block;
-  width: 200px;
-}
-
-.cyclop-atelier-separation {
-  position: relative;
-  height: auto;
-  padding:  24px;
-  z-index: 1;
-  background-color: #fff;
-  }
-.cyclop-atelier-back {
-  height: 400px;
-  width: 100%;
-  background: url('images/brux.png') center 50%;
-  background-attachment: local;
-  background-repeat: no-repeat;
-  background-color: #ffffff;
-  background-size: cover;
-  z-index: -1;
-}
-
-.cyclop-atelier-section {
-  position: relative;
-  }
-    .cyclop-atelier-band {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background-color: #f26522;
-    }
-
-    .cyclop-atelier-band-text {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-    }
-    .cyclop-atelier-band-text p {
-      font-size: 22px;
-    }
-      .cyclop-atelier-band-text.upper-text p {
-        color: #618834;
-        margin-top: 10px;
-        background-color: rgba(255, 255, 255, 0.5);
-      }
-    .cyclop-atelier-band-text.lower-text p {
-      color: #fff;
-      padding-top: 10px;
-    }
-
-.cyclop-cyclopes-section {
-    position: relative;
-    bottom: 0;
-    padding: 24px;
-    z-index: 2;
-    background: #a5bc7e;
-  }
-      .cyclop-cyclopes-band {
-    width: 100%;
-    text-align: center;
-      }
-
-      .cyclop-cyclopes-band-text {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    color: white;
-      }
-
-    .cyclop-cyclopes-band-text p {
-      padding-top: 8px;
-      font-size: 22px;
-    }
-
-.cyclop-link {
-  text-decoration: none;
-  color: #ffffff !important;
-}
-
-  .cyclop-link:hover {
-    color: #f26522 !important;
-  }
-
-  .cyclop-link .material-icons {
-    position: relative;
-    top: 6px;
-  }
-
-.cyclop-alt-link {
-  text-decoration: none;
-  color: #64ffda !important;
-  font-size: 16px;
-}
-
-  .cyclop-alt-link:hover {
-    color: #00bfa5 !important;
-  }
-
-  .cyclop-alt-link .material-icons {
-    top: 6px;
-  }
-
-.cyclop-customized-section {
-  text-align: center;
-  background-color: #ffffff;
-}
-
-.cyclop-customized-section-text {
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px 16px 0 16px;
-}
-
-    .cyclop-customized-section-text p {
-      padding-top: 16px;
-      font-size: 22px;
-      }
-
-    .mdl-button.mdl-button--soutien {
-      background: #f26522;
-      color: #ffffff;
-      font-size: large;
-      }
-    .mdl-button--soutien:hover {
-      background-color: #8f3d16;
-      }
-    .mdl-button--soutien .mdl-ripple {
-      background: #ffffff;
-      }
-
-.cyclop-customized-section-image {
-  background: url('') center top no-repeat;
-  background-size: cover;
-  height: 400px;
-}
-
-.cyclop-more-section {
+	position: relative;
+	background-color: #a5bc7e;
+	width: 100%;
   padding: 24px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #a5bc7e;
 }
-
-  .cyclop-more-section .cyclop-section-title {
-    margin-left: 12px;
-    padding-bottom: 24px;
-  }
-
+.cyclop-asbl {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 900px;
+	white-space: nowrap;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.cyclop-asbl-image {
+	z-index: 1;
+	border-radius: 25px 25px 25px 25px;
+	width: 140px;
+	height: 140px;
+	background: #ffffff;
+}
+.cyclop-asbl-image:hover {
+	box-sizing: border-box;
+	border: 6px solid #f26522;
+}
+.cyclop-asbl-image-text {
+	margin-top: 15px;
+}
+.cyclop-asbl .cyclop-link {
+	z-index: 2;
+}
+.cyclop-image-link {
+	text-decoration: none;
+}
+.cyclop-vzw {
+	display: inline-block;
+	width: 200px;
+}
+.cyclop-atelier-separation {
+	position: relative;
+	height: auto;
+	padding: 24px;
+	z-index: 1;
+	background-color: #fff;
+}
+.cyclop-atelier-back {
+	height: 400px;
+	width: 100%;
+	background: url('images/brux.png') center 50%;
+	background-attachment: local;
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+	background-size: cover;
+	z-index: -1;
+}
+.cyclop-atelier-section {
+	position: relative;
+}
+.cyclop-atelier-band {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: #f26522;
+}
+.cyclop-atelier-band-text {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.cyclop-atelier-band-text p {
+	font-size: 22px;
+}
+.cyclop-atelier-band-text.upper-text p {
+	color: #618834;
+	margin-top: 10px;
+}
+.cyclop-atelier-band-text.lower-text p {
+	color: #fff;
+	padding-top: 10px;
+}
+.cyclop-cyclopes-section {
+	position: relative;
+	bottom: 0;
+	padding: 24px;
+	z-index: 2;
+	background: #a5bc7e;
+}
+.cyclop-cyclopes-band {
+	width: 100%;
+	text-align: center;
+}
+.cyclop-cyclopes-band-text {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: white;
+}
+.cyclop-cyclopes-band-text p {
+	padding-top: 8px;
+	font-size: 22px;
+}
+.cyclop-link {
+	text-decoration: none;
+	color: #ffffff !important;
+}
+.cyclop-link:hover {
+	color: #f26522 !important;
+}
+.cyclop-link .material-icons {
+	position: relative;
+	top: 6px;
+}
+.cyclop-alt-link {
+	text-decoration: none;
+	color: #64ffda !important;
+	font-size: 16px;
+}
+.cyclop-alt-link:hover {
+	color: #00bfa5 !important;
+}
+.cyclop-alt-link .material-icons {
+	top: 6px;
+}
+.cyclop-customized-section {
+	text-align: center;
+	background-color: #ffffff;
+  padding: 24px;
+}
+.cyclop-customized-section-text {
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 16px 0 16px;
+}
+.cyclop-customized-section-text p {
+	padding-top: 16px;
+	font-size: 22px;
+}
+.mdl-button.mdl-button--soutien {
+	background: #f26522;
+	color: #ffffff;
+	font-size: large;
+  margin: 4rem auto;
+}
+.mdl-button--soutien:hover {
+	background-color: #8f3d16;
+}
+.mdl-button--soutien .mdl-ripple {
+	background: #ffffff;
+}
+.cyclop-customized-section-image {
+	background: url('') center top no-repeat;
+	background-size: cover;
+	height: 400px;
+}
+.cyclop-more-section {
+	padding: 24px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #a5bc7e;
+}
+.cyclop-more-section .cyclop-section-title {
+	margin-left: 12px;
+	padding-bottom: 24px;
+}
 .cyclop-event-container {
-  max-width: 1044px;
-  text-align: center;
+	max-width: 1044px;
+	text-align: center;
 }
-  .cyclop-event-box {
-    background-color: #f26522;
-    height: 260px;
-  }
-  .cyclop-event-title {
-    height: 80px;
-    display: inline-block;
-  }
-    .cyclop-event-title-font {
-      font-size: 25px;
-      font-family: Josefin Sans;
-    }
-  .cyclop-event-place {
-    height: 40px;
-    display: inline-block;
-  }
-  .cyclop-event-date {
-    height: 40px;
-    display: inline-block;
-  }
-    .cyclop-event-date-font {
-      font-size: 20px;
-    }
-  .cyclop-event-button {
-    height: 40px;
-    display: inline-block;
-  }
-    .button-event {
-      color: #fff;
-      background: #a5bc7e;
-    }
-    .mdl-button .button-event:hover {
-      background-color: #1f3054;
-    }
-
+.cyclop-event-box {
+	background-color: #f26522;
+	height: 260px;
+}
+.cyclop-event-title {
+	height: 80px;
+	display: inline-block;
+}
+.cyclop-event-title-font {
+	font-size: 25px;
+	font-family: Josefin Sans;
+}
+.cyclop-event-place {
+	height: 40px;
+	display: inline-block;
+}
+.cyclop-event-date {
+	height: 40px;
+	display: inline-block;
+}
+.cyclop-event-date-font {
+	font-size: 20px;
+}
+.cyclop-event-button {
+	height: 40px;
+	display: inline-block;
+}
+.button-event {
+	color: #fff;
+	background: #a5bc7e;
+}
+.mdl-button .button-event:hover {
+	background-color: #1f3054;
+}
 .cyclop-footer {
-  background-color: #fafafa;
-  position: relative;
-  text-align: center;
+	background-color: #fafafa;
+	position: relative;
+	text-align: center;
 }
-
-  .cyclop-footer a:hover {
-    color: #f26522;
-  }
-
-  .cyclop-footer .mdl-mega-footer--top-section::after {
-    border-bottom: none;
-  }
-
-  .cyclop-footer .mdl-mega-footer--middle-section::after {
-    border-bottom: none;
-  }
-
-  .cyclop-footer.mdl-mega-footer--bottom-section {
-    position: relative;
-    background-color: #a5bc7e;
-    margin: 0;
-    padding-bottom: 16px;
-  }
-
-  .cyclop-footer .mdl-mega-footer--bottom-section a {
-    margin-right: 2em;
-  }
-
-  .cyclop-footer .mdl-mega-footer--right-section {
-    margin-bottom: auto;
-  }
-  .cyclop-footer .mdl-mega-footer--right-section a .material-icons {
-    position: relative;
-    top: 6px;
-  }
-
+.cyclop-footer .mdl-mega-footer--top-section::after {
+	border-bottom: none;
+}
+.cyclop-footer .mdl-mega-footer--middle-section::after {
+	border-bottom: none;
+}
+.cyclop-footer {
+	position: relative;
+	background-color: #a5bc7e;
+	margin: 4rem auto 0;
+	padding-bottom: 16px;
+}
+.cyclop-footer .mdl-mega-footer--bottom-section a {
+	margin-right: 2em;
+}
+.cyclop-footer .mdl-mega-footer--right-section {
+	margin-bottom: auto;
+}
+.cyclop-footer .mdl-mega-footer--right-section a .material-icons {
+	position: relative;
+	top: 6px;
+}
 .carte {
-  padding: 0px;
-  border-style: solid;
-  border-color: #f26522;
-  box-shadow: 8px 8px #7f9b4e;
-  border-width: 10px;
+	padding: 0px;
+	border-style: solid;
+	border-color: #f26522;
+	box-shadow: 8px 8px #7f9b4e;
+	border-width: 10px;
 }
-  .carte-text{
-    font-size: 18px;
-    text-align: justify;
-  }
-
-  .social-buttons {
-    text-align: center;
-  }
-  .mdl-button--fab {
-      text-transform: lowercase;
-    }
-    .fa.fa-facebook.fa-2x {
-      font-size: 36px;
-      vertical-align: -50%;
-    }
-    .fa.fa-facebook.fa-lg {
-      font-size: 24px;
-    }
-      .mdl-button.mdl-button--facebook {
-        color: rgb(63, 81, 181);
-      }
-      .mdl-button.mdl-button--facebook:focus:not(:active) {
-        background-color: #3b5998;
-      }
-      .mdl-button--fab.mdl-button--facebook {
-        background: #3b5998;
-        color: #ffffff;
-      }
-      .mdl-button--fab.mdl-button--facebook:hover {
-        background-color: #1f3054;
-      }
-      .mdl-button--fab.mdl-button--facebook:focus:not(:active) {
-        background-color: #3b5998;
-      }
-      .mdl-button--fab.mdl-button--facebook:active {
-        background-color: #3b5998;
-      }
-      .mdl-button--fab.mdl-button--facebook .mdl-ripple {
-        background: rgb(255, 255, 255);
-      }
-
-    .fa.fa-envelope-o.fa-2x {
-      font-size: 36px;
-      vertical-align: -50%;
-    }
-    .fa.fa-envelope-o.fa-lg{
-      font-size: 24px;
-    }
-      .mdl-button.mdl-button--mail:focus:not(:active) {
-          background-color: #a5bc7e;
-      }
-      .mdl-button--fab.mdl-button--mail {
-          background: #a5bc7e;
-          color: rgb(255, 255, 255);
-      }
-      .mdl-button--fab.mdl-button--mail:hover {
-          background-color: #607044;
-      }
-      .mdl-button--fab.mdl-button--mail:focus:not(:active) {
-          background-color: #a5bc7e;
-      }
-      .mdl-button--fab.mdl-button--mail:active {
-          background-color: #a5bc7e;
-      }
-      .mdl-button--fab.mdl-button--mail .mdl-ripple {
-      background: rgb(255, 255, 255);
-      }
-
+.carte-text {
+	font-size: 18px;
+	text-align: justify;
+}
+.carte-atelier {
+	border-radius: 5px;
+	padding: 2px;
+}
+.carte-atelier.vert {
+	border: solid #a5bc7e;
+}
+.carte-atelier.bleu {
+	border: solid #20b2aa;
+}
+.social-buttons {
+	text-align: center;
+}
+.mdl-button--fab {
+	text-transform: lowercase;
+}
+.fa.fa-facebook.fa-2x {
+	vertical-align: middle;
+}
+.fa.fa-facebook.fa-lg {
+	font-size: 24px;
+}
+.mdl-button.mdl-button--facebook {
+	color: rgb(63, 81, 181);
+	background-color: #a5bc7e;
+}
+.mdl-button.mdl-button--facebook:focus:not(:active) {
+	background-color: #3b5998;
+}
+.mdl-button.mdl-button--facebook {
+	background: #3b5998;
+	color: #ffffff;
+}
+.mdl-button.mdl-button--facebook:hover {
+	background-color: #1f3054;
+	color: #f26522;
+}
+.mdl-button.mdl-button--facebook:focus:not(:active) {
+	background-color: #3b5998;
+}
+.mdl-button.mdl-button--facebook:active {
+	background-color: #3b5998;
+}
+.mdl-button.mdl-button--facebook .mdl-ripple {
+	background: rgb(255, 255, 255);
+}
+.fa.fa-envelope-o.fa-2x {
+	vertical-align: middle;
+}
+.fa.fa-envelope-o.fa-lg {
+	font-size: 24px;
+}
+.mdl-button.mdl-button--mail:focus:not(:active) {
+	background-color: #a5bc7e;
+}
+.mdl-button.mdl-button--mail {
+	background-color: #a5bc7e;
+	color: rgb(255, 255, 255);
+}
+.mdl-button.mdl-button--mail:hover {
+	color: #f26522;
+	background-color: #607044;
+}
+.mdl-button.mdl-button--mail:focus:not(:active) {
+	background-color: #a5bc7e;
+}
+.mdl-button.mdl-button--mail:active {
+	background-color: #a5bc7e;
+}
+.mdl-button.mdl-button--mail .mdl-ripple {
+	background: rgb(255, 255, 255);
+}
 .cyclop-link-menu:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 /**** Mobile layout ****/
+
 @media (max-width: 900px) {
-  .cyclop-navigation-container {
-    display: none;
-  }
-
-  .cyclop-title {
-    font-size: 30px;
-    width: 200px;
-  }
-
-  .cyclop-mobile-title {
-    display: block !important;
-    position: absolute;
-    left: calc(50% - 70px);
-    top: 12px;
-    -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-            transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .cyclop-search-box.is-focused ~ .cyclop-mobile-title {
-    opacity: 0;
-  }
-
-  .cyclop-more-button {
-    display: none;
-  }
-
-  .cyclop-search-box.is-focused {
-    width: calc(100% - 48px);
-  }
-
-  .cyclop-search-box .mdl-textfield__expandable-holder {
-    width: 100%;
-  }
-
-  .cyclop-be-together-section {
-    height: 550px;
-  }
-
-  .cyclop-slogan {
-    font-size: 26px;
-    margin: 0 16px;
-    padding-top: 24px;
-  }
-
-  .cyclop-sub-slogan {
-    font-size: 16px;
-    margin: 0 16px;
-    padding-top: 8px;
-  }
-
-  .asbl-info {
-    padding-top: 200px;
-    font-size: 16px;
-  }
-  .cyclop-vzw {
-    width: 150px;
-  }
-  .cyclop-asbl-image {
-    width: 70px;
-    height: 70px;
-  }
-  .cyclop-link {
-    max-width: 70px;
-  }
-  .cyclop-asbl-image:hover {
-    }
-  .img {
-    height: 12px;
-  }
-
-  .cyclop-fab {
-    display: none;
-  }
-
-  .cyclop-atelier-band-text {
-    margin-left: 0;
-    padding: 16px;
-  }
-
-  .cyclop-footer .mdl-mega-footer--bottom-section {
-    display: none;
-  }
+	.cyclop-navigation-container {
+		display: none;
+	}
+	.cyclop-drawer .cyclop-logo-image {
+		.height: 100px;
+		.width: 100px;
+	}
+	.cyclop-title {
+		font-size: 30px;
+		width: 200px;
+	}
+	.cyclop-sub-title {
+		width: 200px;
+		font-size: 38px;
+		margin-bottom: 4rem;
+	}
+	.cyclop-mobile-title {
+		display: block !important;
+		position: absolute;
+		left: calc(50% - 70px);
+		top: 12px;
+		-webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+		transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	.cyclop-search-box.is-focused ~ .cyclop-mobile-title {
+		opacity: 0;
+	}
+	.cyclop-more-button {
+		display: none;
+	}
+	.cyclop-search-box.is-focused {
+		width: calc(100% - 48px);
+	}
+	.cyclop-search-box .mdl-textfield__expandable-holder {
+		width: 100%;
+	}
+	.cyclop-be-together-section {
+		height: 550px;
+	}
+	.cyclop-be-together-text {
+		bottom: 4%;
+	}
+	.cyclop-slogan {
+		font-size: 26px;
+		margin: 0 16px;
+		padding-top: 24px;
+	}
+	.cyclop-sub-slogan {
+		font-size: 16px;
+		margin: 0 16px;
+		padding-top: 8px;
+	}
+	.cyclop-atelier-back {
+		height: 200px;
+	}
+	.asbl-info {
+		padding-top: 10px;
+		font-size: 16px;
+	}
+	.cyclop-vzw {
+		width: 200px;
+	}
+	.cyclop-asbl {
+		max-width: 450px;
+	}
+	.cyclop-asbl-image {
+		width: 70px;
+		height: 70px;
+	}
+	.cyclop-asbl-image:hover {}
+	.img {
+		height: 12px;
+	}
+	.cyclop-link {
+		max-width: 70px;
+	}
+	.cyclop-atelier-band-text {
+		margin-left: 0;
+		padding: 16px;
+	}
+	.cyclop-footer .mdl-mega-footer--bottom-section {
+		display: none;
+	}
 }
