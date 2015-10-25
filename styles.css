@@ -5,6 +5,7 @@
 body {
 	margin: 0;
 	font-family: 'Josefin Sans', 'Helvetica', 'Arial', sans-serif;
+  line-height: 2rem;
 }
 a {
 	color: inherit;
@@ -186,6 +187,18 @@ a img {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+.contact {
+  line-height: 2.5rem;
+  text-align: left;
+  padding-top: 35px;
+}
+.contact a {
+  color: #f26522;
+}
+.contact a:hover {
+  color: #a5bc7e;
+}
+
 .cyclop-sub-location {
 	text-decoration: none;
 	color: #f26522;
@@ -224,7 +237,8 @@ a img {
 .cyclop-asbl-section {
 	position: relative;
 	background-color: #a5bc7e;
-	width: 100%
+	width: 100%;
+  padding: 24px;
 }
 .cyclop-asbl {
 	box-sizing: border-box;
@@ -350,12 +364,13 @@ a img {
 .cyclop-customized-section {
 	text-align: center;
 	background-color: #ffffff;
+  padding: 24px;
 }
 .cyclop-customized-section-text {
 	max-width: 500px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 20px 16px 0 16px;
+	padding: 0 16px 0 16px;
 }
 .cyclop-customized-section-text p {
 	padding-top: 16px;
@@ -437,10 +452,10 @@ a img {
 .cyclop-footer .mdl-mega-footer--middle-section::after {
 	border-bottom: none;
 }
-.cyclop-footer.mdl-mega-footer--bottom-section {
+.cyclop-footer {
 	position: relative;
 	background-color: #a5bc7e;
-	margin: 0;
+	margin: 4rem auto 0;
 	padding-bottom: 16px;
 }
 .cyclop-footer .mdl-mega-footer--bottom-section a {
