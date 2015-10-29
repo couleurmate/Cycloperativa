@@ -351,11 +351,10 @@ a img {
 }
 .cyclop-alt-link {
 	text-decoration: none;
-	color: #64ffda !important;
-	font-size: 16px;
+	color: #7f9b4e !important;
 }
 .cyclop-alt-link:hover {
-	color: #00bfa5 !important;
+	color: #f26522 !important;
 }
 .cyclop-alt-link .material-icons {
 	top: 6px;
