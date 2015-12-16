@@ -57,6 +57,7 @@ a img {
 .cyclop-header {
 	overflow: visible;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
+	background-color: #f26522; 
 }
 .cyclop-header .material-icons {
 	color: #8daa5d !important;
@@ -520,14 +521,25 @@ a img {
 .mdl-button.mdl-button--mail:focus:not(:active) {
 	background-color: #a5bc7e;
 }
+.mdl-button.mdl-button--mail.wfoot:focus:not(:active) {
+	background-color: #f26522;
+}
 .mdl-button.mdl-button--mail {
 	background-color: #a5bc7e;
 	color: rgb(255, 255, 255);
 	font-size: large;
 }
+.mdl-button.mdl-button--mail.wfoot {
+	background-color: #f26522;
+	color: rgb(255, 255, 255);
+}
 .mdl-button.mdl-button--mail:hover {
 	color: #f26522;
 	background-color: #607044;
+}
+.mdl-button.mdl-button--mail.wfoot:hover {
+	color: #f26522;
+	background-color: #ffffff;
 }
 .mdl-button.mdl-button--mail:focus:not(:active) {
 	background-color: #a5bc7e;
@@ -559,7 +571,7 @@ a img {
 	.cyclop-sub-title {
 		width: 200px;
 		font-size: 38px;
-		margin-bottom: 4rem;
+		margin-bottom: 2rem;
 	}
 	.cyclop-mobile-title {
 		display: block !important;
@@ -583,9 +595,6 @@ a img {
 	}
 	.cyclop-be-together-section {
 		height: 550px;
-	}
-	.cyclop-be-together-text {
-		bottom: 4%;
 	}
 	.cyclop-slogan {
 		font-size: 26px;
@@ -626,6 +635,12 @@ a img {
 		padding: 16px;
 	}
 	.cyclop-footer .mdl-mega-footer--bottom-section {
+		display: none;
+	}
+	.kontact {
+		text-align: center;
+	}
+	.kontact-text {
 		display: none;
 	}
 }
