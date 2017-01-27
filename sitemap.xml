@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>http://cycloperativa.org/</loc>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>http://cycloperativa.org/images/atelier.png</image:loc>
+      <image:title>Atelier</image:title>
+      <image:caption>Atelier</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>http://cycloperativa.org/images/velo.png</image:loc>
+      <image:title>Velos</image:title>
+      <image:caption>Velos</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>http://cycloperativa.org/images/cyclope.png</image:loc>
+      <image:title>Cyclopes</image:title>
+      <image:caption>Cyclopes</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>http://cycloperativa.org/images/bier.png</image:loc>
+      <image:title>Bier</image:title>
+      <image:caption>Bier</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://cycloperativa.org/carte.html</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://cycloperativa.org/refietsing.html</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://cycloperativa.org/feestdelacharge.html</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://cycloperativa.org/feestbak.html</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://cycloperativa.org/index.html</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+</urlset>
+<!--<guid value="2bfe8b52-79ac-40b1-8024-13bf13219e44" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
