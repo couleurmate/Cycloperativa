@@ -7,6 +7,11 @@ body {
 	font-family: 'Josefin Sans', 'Helvetica', 'Arial', sans-serif;
   line-height: 2rem;
 }
+h1 {
+	line-height: 1;
+	letter-spacing: 0;
+	margin: 0px 0;
+}
 a {
 	color: inherit;
 	text-decoration: none;
@@ -31,6 +36,9 @@ a img {
 .cyclop-search-box .mdl-textfield__input {
 	color: rgba(0, 0, 0, 0.87);
 }
+.demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
+  padding-right: 0;
+}
 .cyclop-header .mdl-menu__container {
 	z-index: 50;
 	margin: 0 !important;
@@ -54,13 +62,21 @@ a img {
 	box-shadow: 4px 4px #7f9b4e;
 	text-transform: uppercase;
 }
+.cyclop-header-font {
+	color: #ffffff;
+	font-size: 25px;
+	padding: 10px;
+}
+.cyclop-header-font:hover {
+	color: #f26522;
+}
 .cyclop-header {
 	overflow: visible;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
-	background-color: #f26522; 
+	background-color: #f26522;
 }
 .cyclop-header .material-icons {
-	color: #8daa5d !important;
+	color: #ffffff !important;
 	font-size: 24px;
 }
 .cyclop-header .mdl-layout__drawer-button {
@@ -73,6 +89,33 @@ a img {
 	font-weight: 700;
 	font-size: 20px;
 	text-shadow: 3px 3px #93311f;
+}
+.banner-box {
+	height: 90px;
+	background-color:white;
+	padding:0;
+}
+.banner {
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	display: block;
+	color: black;
+	background-color: rgba(139,195,74,0.7);
+}
+.banner:hover {
+	background-color: rgba(139,195,74,0.40);
+}
+.banner-text {
+	font-family: 'Geo', 'Helvetica', 'Arial', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	margin: 1%;
+	line-height: 150%;
+	color: white;
+}
+.banner-text:hover {
+	color: black;
 }
 .cyclop-navigation-container {
 	/* Simple hack to make the overflow happen to the left instead... */
@@ -104,23 +147,14 @@ a img {
 	line-height: 68px;
 	background-color: transparent !important;
 	border-bottom: 4px solid transparent;
+	font-family: 'Geo', 'Impact', sans-serif;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 20px;
+	text-shadow: 3px 3px #93311f;
 }
 .cyclop-navigation .mdl-navigation__link:hover {
 	border-bottom: 4px solid #8bc34a;
-}
-.cyclop-search-box {
-	-webkit-box-ordinal-group: 3;
-	-webkit-order: 2;
-	-ms-flex-order: 2;
-	order: 2;
-	margin-left: 16px;
-	margin-right: 16px;
-}
-.cyclop-more-button {
-	-webkit-box-ordinal-group: 4;
-	-webkit-order: 3;
-	-ms-flex-order: 3;
-	order: 3;
 }
 .cyclop-drawer {
 	border-right: none;
@@ -162,9 +196,9 @@ a img {
 }
 .cyclop-be-together-section {
 	position: relative;
-	height: 700px;
+	height: 600px;
 	background: url('images/cyclop-logoo.png') center 30% no-repeat scroll;
-	background-position: 50% 40px;
+	background-position: 50% 10px;
 	background-color: #F8F8F8;
 	background-size: contain;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
@@ -205,7 +239,6 @@ a img {
 	color: #f26522;
 	vertical-align: top;
 }
-.cyclop-sub-location:hover {}
 .mdl-mega-footer {
 	color: #000000;
 }
@@ -224,11 +257,23 @@ a img {
 	text-shadow: 3px 3px #93311f;
 	text-align: center;
 }
+.cyclop-sub-sub {
+	margin: 0 auto 2rem;
+	font-family: 'Geo', 'Helvetica', 'Arial', sans-serif;
+	font-size: 35px;
+	color: #ffffff;
+	background-color: #a5bc7e;
+	width: 450px;
+}
 .asbl-info {
 	font-size: 22px;
 	color: #ffffff;
 	padding-top: 10px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 .asbl-info a {
 	text-decoration: none;
@@ -243,26 +288,31 @@ a img {
 .cyclop-asbl {
 	box-sizing: border-box;
 	width: 100%;
-	max-width: 900px;
 	white-space: nowrap;
 	overflow-x: hidden;
 	overflow-y: hidden;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 .cyclop-asbl-image {
 	z-index: 1;
-	border-radius: 25px 25px 25px 25px;
-	width: 140px;
-	height: 140px;
+	padding: 20px;
+	width: auto;
+	max-height: 400px;
 	background: #ffffff;
+	box-shadow: 4px 4px #f26522;
 }
-.cyclop-asbl-image:hover {
-	box-sizing: border-box;
-	border: 6px solid #f26522;
+.cyclop-asbl-feest {
+	z-index: 1;
+	width: auto;
+	max-height: 700px;
 }
-.cyclop-asbl-image-text {
-	margin-top: 15px;
+.taal {
+	width: 30%;
+}
+.cyclop-asbl-feest-logo {
+	max-width: 200px;
+	max-height: 135px;
 }
 .cyclop-asbl .cyclop-link {
 	z-index: 2;
@@ -272,7 +322,6 @@ a img {
 }
 .cyclop-vzw {
 	display: inline-block;
-	width: 200px;
 }
 .cyclop-atelier-separation {
 	position: relative;
@@ -371,6 +420,9 @@ a img {
 	margin-right: auto;
 	padding: 0 16px 0 16px;
 }
+	.refietsing-text {
+		max-width: 800px
+	}
 .cyclop-customized-section-text p {
 	padding-top: 16px;
 	font-size: 22px;
@@ -553,7 +605,28 @@ a img {
 .cyclop-link-menu:hover {
 	cursor: pointer;
 }
-
+/* Programme fête de la charge */
+.demo-card-wide.mdl-card {
+  width: 512px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 200px;
+  background: url('images/fetecharge.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+.mdl-card__title-text {
+	font-family: 'Geo', 'Impact', sans-serif;
+	font-size: 34px;
+	margin-left: 20%;
+}
+.mdl-card__supporting-text {
+	color: black;
+	font-size: 18px;
+	width: auto;
+}
 /**** Mobile layout ****/
 
 @media (max-width: 900px) {
@@ -565,6 +638,11 @@ a img {
 		.width: 100px;
 	}
 	.cyclop-title {
+		display: block !important;
+		position: relative;
+		-webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+		transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+		display: none;
 		font-size: 30px;
 		width: 200px;
 	}
@@ -573,28 +651,11 @@ a img {
 		font-size: 38px;
 		margin-bottom: 2rem;
 	}
-	.cyclop-mobile-title {
-		display: block !important;
-		position: absolute;
-		left: calc(50% - 70px);
-		top: 12px;
-		-webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-		transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-	}
-	.cyclop-search-box.is-focused ~ .cyclop-mobile-title {
-		opacity: 0;
-	}
-	.cyclop-more-button {
-		display: none;
-	}
-	.cyclop-search-box.is-focused {
-		width: calc(100% - 48px);
-	}
-	.cyclop-search-box .mdl-textfield__expandable-holder {
-		width: 100%;
+	.cyclop-header-font {
+		font-size: 20px;
 	}
 	.cyclop-be-together-section {
-		height: 550px;
+		height: 475px;
 	}
 	.cyclop-slogan {
 		font-size: 26px;
@@ -613,19 +674,8 @@ a img {
 		padding-top: 10px;
 		font-size: 16px;
 	}
-	.cyclop-vzw {
-		width: 200px;
-	}
-	.cyclop-asbl {
-		max-width: 450px;
-	}
 	.cyclop-asbl-image {
-		width: 70px;
-		height: 70px;
-	}
-	.cyclop-asbl-image:hover {}
-	.img {
-		height: 12px;
+		max-height: 200px;
 	}
 	.cyclop-link {
 		max-width: 70px;
@@ -642,5 +692,37 @@ a img {
 	}
 	.kontact-text {
 		display: none;
+	}
+	.demo-card-wide.mdl-card {
+	  width: auto;
+	}
+	.demo-card-wide > .mdl-card__title {
+		height: 125px;
+	}
+	.mdl-card__title {
+		padding-bottom: 5px;
+	}
+	.mdl-card__title-text {
+		font-size: 24px;
+		margin-left: 15%;
+	}
+	.mdl-card__supporting-text {
+		font-size: 14px;
+	}
+	.cyclop-asbl-feest {
+		max-height: 400px;
+	}
+	.cyclop-asbl-feest-logo {
+		max-width: 100px;
+		max-height: 100px;
+	}
+	.taal {
+		width: 50%;
+	}
+	.banner-box {
+		height:80px;
+	}
+	.banner-text {
+		font-size: 16px;
 	}
 }
