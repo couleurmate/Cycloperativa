@@ -430,7 +430,7 @@ a img {
 .mdl-button.mdl-button--soutien {
 	background: #f26522;
 	color: #ffffff;
-	font-size: large;
+	font-size: 26px;
   margin: 4rem auto;
 }
 .mdl-button--soutien:hover {
