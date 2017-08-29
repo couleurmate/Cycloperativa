@@ -611,20 +611,23 @@ a img {
 }
 .demo-card-wide > .mdl-card__title {
   color: #fff;
-  height: 200px;
-  background: url('images/fetecharge.jpg') center / cover;
+  height: 50px;
 }
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
 }
+.mdl-card {
+	background-color: #ebe225;
+}
 .mdl-card__title-text {
 	font-family: 'Geo', 'Impact', sans-serif;
 	font-size: 34px;
-	margin-left: 20%;
+	margin: auto;
+	color: #a24a9c;
 }
 .mdl-card__supporting-text {
-	color: black;
-	font-size: 18px;
+	color: white;
+	font-size: 22px;
 	width: auto;
 }
 /**** Mobile layout ****/
