@@ -707,7 +707,7 @@ a img {
 	}
 	.mdl-card__title-text {
 		font-size: 24px;
-		margin-left: 15%;
+		margin: auto;
 	}
 	.mdl-card__supporting-text {
 		font-size: 14px;
