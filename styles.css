@@ -1,4 +1,4 @@
-@font-face {
+100vh@font-face {
 	font-family: 'Geo', sans-serif;
 	font-family: 'Josefin Sans', sans-serif;
 }
@@ -658,7 +658,10 @@ a img {
 		font-size: 20px;
 	}
 	.cyclop-be-together-section {
-		height: 475px;
+	
+	}
+	.cyclop-be-together-text {
+
 	}
 	.cyclop-slogan {
 		font-size: 26px;
