@@ -660,7 +660,7 @@ a img {
 	.cyclop-be-together-section {
 	}
 	.cyclop-be-together-text {
-		bottom: 5vh;
+		bottom: 40vh;
 	}
 	.cyclop-slogan {
 		font-size: 26px;
@@ -680,6 +680,9 @@ a img {
 	}
 	.cyclop-asbl-image {
 		max-height: 200px;
+	}
+	.bier {
+		max-height: 300px;
 	}
 	.cyclop-link {
 		max-width: 70px;
