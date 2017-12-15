@@ -196,7 +196,7 @@ a img {
 }
 .cyclop-be-together-section {
 	position: relative;
-	height: 600px;
+	height: 100vh;
 	background: url('images/cyclop-logoo.png') center 30% no-repeat scroll;
 	background-position: 50% 10px;
 	background-color: #F8F8F8;
