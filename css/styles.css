@@ -90,6 +90,12 @@ a img {
 	font-size: 20px;
 	text-shadow: 3px 3px #93311f;
 }
+#navbar {
+	background-color: rgb(255,87,34);
+	top: -50px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
 .banner-box {
 	height: 90px;
 	background-color: white;
@@ -101,19 +107,19 @@ a img {
 	width: 100%;
 	display: block;
 	color: black;
-	background-color: #6cb357;
+	background-color: #fef200;
 	-webkit-animation-name: banner; /* Safari 4.0 - 8.0 */
 	 -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
-	 animation: banner 1s infinite;
+	 animation: banner 1s 5;
 }
 @keyframes banner {
-    0%   {background-color: #6cb357;}
-		29%   {background-color: #6cb357;}
-		30%   {background-color: #fff200;}
-		59%   {background-color: #fff200;}
-		80%   {background-color: #f36399;}
-		99%   {background-color: #f36399;}
-		100%   {background-color: #6cb357;}
+    0%   {background-color: #EC1D25;}
+		29%   {background-color: #EC1D25;}
+		30%   {background-color: #fef200;}
+		59%   {background-color: #fef200;}
+		80%   {background-color: #005B70;}
+		99%   {background-color: #005B70;}
+		100%   {background-color: #EC1D25;}
 	}
 
 .banner:hover {
@@ -125,7 +131,7 @@ a img {
 	font-weight: 400;
 	margin: 1%;
 	line-height: 150%;
-	color: white;
+	color: black;
 }
 .banner-text:hover {
 	color: black;
@@ -273,8 +279,9 @@ a img {
 	.feestcharge {
 		justify-content: center;
 		margin: auto;
-		background-color: #6cb357;
-		box-shadow: 4px 4px #fff200;
+		background-color: #005B70;
+		box-shadow: 4px 4px #FEF200;
+		color: #FEF200;
 	}
 .cyclop-sub-sub {
 	margin: 0 auto 2rem;
@@ -336,19 +343,19 @@ a img {
 	width: 30%;
 }
 .chargebutton {
-	background: #6cb357;
-	color: #fff200;
+	background: #005B70;
+	color: #FEF200;
 }
 	.chargebutton:hover{
-		background: #f36399;
+		background: #EC1D25;
 	}
 	.fbutton {
 		background-color: #fff;
-		color: #f36399 !important;
+		color: #EC1D25 !important;
 	}
 	.fbutton:hover {
 		background-color: #fff200;
-		color: #6cb357 !important;
+		color: #EC1D25 !important;
 	}
 .cyclop-asbl-feest-logo {
 	max-width: 200px;
@@ -658,13 +665,13 @@ a img {
   color: #fff;
 }
 .mdl-card {
-	background-color: #6cb357;
+	background-color: #005B70;
 }
 .mdl-card__title-text {
 	font-family: 'Geo', 'Impact', sans-serif;
 	font-size: 34px;
 	margin: auto;
-	color: #fff200;
+	color: #FEF200;
 }
 .mdl-card__supporting-text {
 	color: white;

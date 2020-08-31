@@ -14,13 +14,14 @@
 		<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.3.0/material.deep_orange-light_green.min.css"/>
 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/animate.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
 
 		<!--favicon-->
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f26522">
 		<meta name="msapplication-TileColor" content="#da532c">
@@ -55,7 +56,7 @@
 		</script>
 		<!-- End Google Tag Manager -->
 		<!-- Uses a header that contracts as the page scrolls down. -->
-		<div class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header" itemscope itemtype="http://schema.org/LocalBusiness">
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" itemscope itemtype="http://schema.org/LocalBusiness">
 			<header class="mdl-layout__header mdl-layout__header--waterfall">
 				<!-- To fix on mobiles -->
 				<!-- Top row, always visible -->
@@ -69,53 +70,26 @@
 
 					<div class="cyclop-header-spacer mdl-layout-spacer"></div>
 
-					<div class="cyclop-navigation-container">
-						<nav class="cyclop-navigation mdl-navigation">
-							<a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html#asbl">Het concept</a>
-							<a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html#cyclopes">L’équipe</a>
-							<a class="mdl-navigation__link mdl-typography--text-uppercase" href="carte.html">Carte</a>
-							<a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html#bier">Bier</a>
-							<a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html#contact">Contact</a>
-						</nav>
-					</div>
+					<nav class="cyclop-navigation mdl-navigation">
+						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html#asbl">Het concept</a>
+						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html#cyclopes">L’équipe</a>
+						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="carte.html">Carte</a>
+						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html#bier">Bier</a>
+						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html#contact">Contact</a>
+					</nav>
+				</div>
+				<!-- Bottom row, not visible on scroll -->
+				<!-- Banner-->
+				<div id="navbar" class="mdl-layout__header-row banner-box">
+					<a href="fetedelacharge.html" title="Bakfiets Feest de la Charge #8" target="_self" class="banner">
+						<p class="banner-text">
+							8e editie de la Bakfiets Feest de la Charge
+							<br><i class="fas fa-chevron-right"></i> Samedag 19/09 op Place Poelaert Plein <i class="fas fa-chevron-left"></i>
+						</p>
+					</a>
 				</div>
 
-				<!-- Bottom row, not visible on scroll -->
-				<div class="mdl-layout__header-row banner-box" style="">
-	          <a href="fetedelacharge.html" title="Bakfiets Feest de la Charge #6" target="_self" class="banner">
-							<p class="banner-text">
-								6e editie de la Bakfiets Feest de la Charge
-								<br><i class="fas fa-chevron-right"></i> Samedag 15/09 op Place Poelaert Plein <i class="fas fa-chevron-left"></i>
-							</p>
-						</a>
-					</div>
 		</header>
-
-		<div class="cyclop-drawer mdl-layout__drawer">
-			<span class="mdl-layout-title" itemscope itemtype="https://schema.org/Organization">
-				<a itemprop="url" href="http://cycloperativa.org">
-					<img class="cyclop-logo-image" src="images/cyclop-logo.png" alt="Cycloperativa l'atelier velo en ville" itemprop="logo">
-				</a>
-			</span>
-			<nav class="mdl-navigation">
-				<a class="mdl-navigation__link" href="index.html#asbl">Het Concept</a>
-				<a class="mdl-navigation__link" href="refietsing.html">Refietsing</a>
-				<a class="mdl-navigation__link" href="carte.html">Carte des ateliers</a>
-				<a class="mdl-navigation__link" href="index.html#atelier">Het Atelier</a>
-				<a class="mdl-navigation__link" href="index.html#cyclopes">De Cyclopes</a>
-				<a class="mdl-navigation__link" href="index.html#bier">Bier</a>
-				<a class="mdl-navigation__link" href="index.html#agenda">Cyclopagenda</a>
-				<a class="mdl-navigation__link" href="index.html#contact">Contact</a>
-				<span class="social-buttons">
-					<a href="https://www.facebook.com/Cycloperativa" title="Partage op Facebook" target="_blank" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--facebook fa-2x">
-						<i class="fab fa-facebook-f fa-fw"></i>
-					</a>
-					<a href="mailto:saluke@cycloperativa.org" title="Stuur een message" target="_blank" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--mail fa-2x">
-						<i class="far fa-envelope fa-fw"></i>
-					</a>
-				</span>
-			</nav>
-		</div>
 
 		<div class="cyclop-content mdl-layout__content">
 			<section>
@@ -213,12 +187,12 @@
 								<div class="mdl-grid">
 								  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
 										<div class="mdl-list mdl-shadow--2dp name">
-											<span>Caspar</span>
+											<span>Brecht</span>
 										</div>
 									</div>
 								  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
 										<div class="mdl-list mdl-shadow--2dp name-inverted">
-											<span>Ciske</span>
+											<span>Alex</span>
 										</div>
 									</div>
 								  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
@@ -233,7 +207,7 @@
 									</div>
 								  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
 										<div class="mdl-list mdl-shadow--2dp name-inverted">
-											<span>Sem</span>
+											<span>JPP</span>
 										</div>
 									</div>
 								  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
@@ -263,15 +237,21 @@
 									</div>
 									<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
 										<div class="mdl-list mdl-shadow--2dp name">
-											<span>Mathieu</span>
+											<span>Sarita</span>
 										</div>
 									</div>
 								  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
 										<div class="mdl-list mdl-shadow--2dp name-inverted">
-											<span>Jean-Phil</span>
+											<span>Jipé</span>
 										</div>
 									</div>
 								</div>
+								<a href="https://docs.google.com/forms/d/1MIyucpBN1bP7539oWsnpMbqppr_gBYUHbKrF874OhTU/viewform?c=0&w=1">
+									<span class="cyclop-sub-title mdl-button mdl-button--raised mdl-button--soutien" style="padding: 0.5rem 2.5rem" target="_blank">
+										<i class="fas fa-fist-raised fa-fw"></i>
+										Rejoins notre équipe !
+									</span>
+								</a>
 						</div>
 					</div>
 				</div>
@@ -398,14 +378,14 @@
 									<br>
 								</div>
 								<div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone" style="text-align:center">
-									<a href="mailto:saluke@cycloperativa.org" title="Stuur een message" target="_blank" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--mail fa-fw">
+									<a href="mailto:&#115;&#97;&#108;&#117;&#107;&#101;&#64;&#99;&#121;&#99;&#108;&#111;&#112;&#101;&#114;&#97;&#116;&#105;&#118;&#97;&#46;&#111;&#114;&#103;" title="Stuur een message" target="_blank" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--mail fa-fw">
 										<i class="fas fa-envelope"></i>
 									</a>
 								</div>
 								<div class="mdl-cell mdl-cell--10-col mdl-cell--3-col-phone">
 									<span class="kontact-hidden">Kontact nous</span>
-									<a href="mailto:saluke@cycloperativa.org" title="Stuur een message" target="_blank">
-										saluke@cycloperativa.org
+									<a href="mailto:&#115;&#97;&#108;&#117;&#107;&#101;&#64;&#99;&#121;&#99;&#108;&#111;&#112;&#101;&#114;&#97;&#116;&#105;&#118;&#97;&#46;&#111;&#114;&#103;" title="Stuur een message" target="_blank">
+										par mail
 									</a>
 								</div>
 								<div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone" style="text-align:center">
@@ -422,7 +402,7 @@
 							</div>
 						</div>
 						<div class="mdl-cell mdl-cell--6-col">
-							<iframe width="100%" height="300px" class="carte" src="http://umap.openstreetmap.fr/fr/map/ateliers-participatifs_55600?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=null&onLoadPanel=undefined&captionBar=false#15/50.84639/4.34413"></iframe>
+							<iframe width="100%" height="300px" class="carte" src="//umap.openstreetmap.fr/fr/map/ateliers-participatifs_55600?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=null&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=null&onLoadPanel=undefined&captionBar=false#15/50.8455/4.3444"></iframe>
 						</div>
 					</div>
 				</div>
@@ -431,7 +411,7 @@
 			<footer class="mdl-mini-footer cyclop-footer">
 				<div class="mdl-grid">
 					<div class="mdl-cell mdl-cell--12-col">
-						<a href="mailto:saluke@cycloperativa.org" title="Stuur een message" target="_blank" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--mail wfoot fa-fw"
+						<a href="mailto:&#115;&#97;&#108;&#117;&#107;&#101;&#64;&#99;&#121;&#99;&#108;&#111;&#112;&#101;&#114;&#97;&#116;&#105;&#118;&#97;&#46;&#111;&#114;&#103;" title="Stuur een message" target="_blank" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--mail wfoot fa-fw"
 						 style="margin: 5px">
 							<i class="fas fa-envelope"></i>
 						</a>
@@ -441,7 +421,7 @@
 						</a>
 					</div>
 					<div class="mdl-cell mdl-cell--12-col">
-						<p class="mdl-typography--font-light mdl-color-text--black">vzw Cycloperativa asbl 2015
+						<p class="mdl-typography--font-light mdl-color-text--black">vzw Cycloperativa asbl 2015-2020
 							<br>Place du Samedi 13 - 1000 Bruxsel
 							<br>IBAN : BE12 5230 8056 9992
 							<br>TVA/BTW BE0502.772.675
@@ -458,8 +438,15 @@
 		</div>
 
 		</div>
-
+		<script
+		  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+		  crossorigin="anonymous">
+		</script>
+		<script type="text/javascript" src="js/scroll.js"></script>
+		<script src="js/wow.min.js"></script>
 		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+		<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 	</body>
 
 </html>
