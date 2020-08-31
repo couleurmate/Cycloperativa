@@ -55,7 +55,7 @@ a img {
 	text-align: center;
 	color: #ffffff;
 	font-weight: 400;
-	font-size: 40px;
+	font-size: 2.5rem;
 	text-shadow: 3px 3px #93311f;
 	background-color: #a5bc7e;
 	width: 280px;
@@ -90,9 +90,15 @@ a img {
 	font-size: 20px;
 	text-shadow: 3px 3px #93311f;
 }
+#navbar {
+	background-color: rgb(255,87,34);
+	top: -50px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
 .banner-box {
 	height: 90px;
-	background-color:white;
+	background-color: white;
 	padding:0;
 }
 .banner {
@@ -101,10 +107,23 @@ a img {
 	width: 100%;
 	display: block;
 	color: black;
-	background-color: #a24a9c;
+	background-color: #fef200;
+	-webkit-animation-name: banner; /* Safari 4.0 - 8.0 */
+	 -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+	 animation: banner 1s 5;
 }
+@keyframes banner {
+    0%   {background-color: #EC1D25;}
+		29%   {background-color: #EC1D25;}
+		30%   {background-color: #fef200;}
+		59%   {background-color: #fef200;}
+		80%   {background-color: #005B70;}
+		99%   {background-color: #005B70;}
+		100%   {background-color: #EC1D25;}
+	}
+
 .banner:hover {
-	background-color: #ebe225;
+	background: #f36399;
 }
 .banner-text {
 	font-family: 'Geo', 'Helvetica', 'Arial', sans-serif;
@@ -112,7 +131,7 @@ a img {
 	font-weight: 400;
 	margin: 1%;
 	line-height: 150%;
-	color: white;
+	color: black;
 }
 .banner-text:hover {
 	color: black;
@@ -215,10 +234,10 @@ a img {
 	color: #618834;
 }
 .cyclop-slogan {
-	font-size: 40px;
+	font-size: 2.5rem;
 }
 .cyclop-sub-slogan {
-	font-size: 22px;
+	font-size: 1.4rem;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -257,13 +276,19 @@ a img {
 	text-shadow: 3px 3px #93311f;
 	text-align: center;
 }
+	.feestcharge {
+		justify-content: center;
+		margin: auto;
+		background-color: #005B70;
+		box-shadow: 4px 4px #FEF200;
+		color: #FEF200;
+	}
 .cyclop-sub-sub {
 	margin: 0 auto 2rem;
 	font-family: 'Geo', 'Helvetica', 'Arial', sans-serif;
 	font-size: 35px;
 	color: #ffffff;
 	background-color: #a5bc7e;
-	width: 450px;
 }
 .name {
 	background-color: #f26522;
@@ -273,7 +298,7 @@ a img {
 	color: #f26522;
 }
 .asbl-info {
-	font-size: 22px;
+	font-size: 1.4rem;
 	color: #ffffff;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -317,6 +342,21 @@ a img {
 .taal {
 	width: 30%;
 }
+.chargebutton {
+	background: #005B70;
+	color: #FEF200;
+}
+	.chargebutton:hover{
+		background: #EC1D25;
+	}
+	.fbutton {
+		background-color: #fff;
+		color: #EC1D25 !important;
+	}
+	.fbutton:hover {
+		background-color: #fff200;
+		color: #EC1D25 !important;
+	}
 .cyclop-asbl-feest-logo {
 	max-width: 200px;
 	max-height: 135px;
@@ -363,7 +403,7 @@ a img {
 	text-align: center;
 }
 .cyclop-atelier-band-text p {
-	font-size: 22px;
+	font-size: 1.4rem;
 }
 .cyclop-atelier-band-text.upper-text p {
 	color: #618834;
@@ -371,7 +411,8 @@ a img {
 }
 .cyclop-atelier-band-text.lower-text p {
 	color: #fff;
-	padding-top: 10px;
+	padding: 10px 0;
+	margin-bottom: 0;
 }
 .cyclop-cyclopes-section {
 	position: relative;
@@ -393,7 +434,7 @@ a img {
 }
 .cyclop-cyclopes-band-text p {
 	padding-top: 8px;
-	font-size: 22px;
+	font-size: 1.4rem;
 }
 .cyclop-link {
 	text-decoration: none;
@@ -432,7 +473,7 @@ a img {
 	}
 .cyclop-customized-section-text p {
 	padding-top: 16px;
-	font-size: 22px;
+	font-size: 1.4rem;
 }
 .mdl-button.mdl-button--soutien {
 	background: #f26522;
@@ -624,17 +665,17 @@ a img {
   color: #fff;
 }
 .mdl-card {
-	background-color: #ebe225;
+	background-color: #005B70;
 }
 .mdl-card__title-text {
 	font-family: 'Geo', 'Impact', sans-serif;
 	font-size: 34px;
 	margin: auto;
-	color: #a24a9c;
+	color: #FEF200;
 }
 .mdl-card__supporting-text {
 	color: white;
-	font-size: 22px;
+	font-size: 1.4rem;
 	width: auto;
 }
 
@@ -654,7 +695,7 @@ a img {
 		-webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 		transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 		display: none;
-		font-size: 30px;
+		font-size: 2rem;
 		width: 200px;
 	}
 	.cyclop-sub-title {
@@ -671,7 +712,7 @@ a img {
 		bottom: 25vh;
 	}
 	.cyclop-slogan {
-		font-size: 26px;
+		font-size: 2rem;
 		margin: 0 16px;
 		padding-top: 24px;
 	}
