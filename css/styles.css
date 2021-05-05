@@ -97,7 +97,7 @@ a img {
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 .banner-box {
-	height: 90px;
+	height: 150px;
 	background-color: white;
 	padding:0;
 }
@@ -108,9 +108,6 @@ a img {
 	display: block;
 	color: black;
 	background-color: #fef200;
-	-webkit-animation-name: banner; /* Safari 4.0 - 8.0 */
-	 -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
-	 animation: banner 1s 5;
 }
 @keyframes banner {
     0%   {background-color: #EC1D25;}
