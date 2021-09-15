@@ -97,7 +97,7 @@ a img {
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 .banner-box {
-	height: 150px;
+	height: 14vh;
 	background-color: white;
 	padding:0;
 }
@@ -124,7 +124,7 @@ a img {
 }
 .banner-text {
 	font-family: 'Geo', 'Helvetica', 'Arial', sans-serif;
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: 400;
 	margin: 1%;
 	line-height: 150%;
@@ -276,8 +276,8 @@ a img {
 	.feestcharge {
 		justify-content: center;
 		margin: auto;
-		background-color: #005B70;
-		box-shadow: 4px 4px #FEF200;
+		background-color: #105670;
+		box-shadow: 4px 4px #feed01;
 		color: #FEF200;
 	}
 .cyclop-sub-sub {
@@ -340,8 +340,8 @@ a img {
 	width: 30%;
 }
 .chargebutton {
-	background: #005B70;
-	color: #FEF200;
+	background: #105670;
+	color: #feed01;
 }
 	.chargebutton:hover{
 		background: #EC1D25;
@@ -771,9 +771,6 @@ a img {
 	}
 	.taal {
 		width: 50%;
-	}
-	.banner-box {
-		height:60px;
 	}
 	.banner-text {
 		font-size: 16px;
