@@ -1,6 +1,8 @@
 @font-face {
 	font-family: 'Geo', sans-serif;
 	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Faster One', cursive;
+	font-family: 'Bree Serif', serif
 }
 body {
 	margin: 0;
@@ -51,7 +53,7 @@ a img {
 }
 .cyclop-title {
 	display: block !important;
-	font-family: 'Geo', 'Impact', sans-serif;
+	font-family: 'Faster One', 'Geo', 'Impact', sans-serif, cursive;
 	text-align: center;
 	color: #ffffff;
 	font-weight: 400;
@@ -163,7 +165,7 @@ a img {
 	line-height: 68px;
 	background-color: transparent !important;
 	border-bottom: 4px solid transparent;
-	font-family: 'Geo', 'Impact', sans-serif;
+	font-family: 'Bree Serif', serif, 'Geo', 'Impact', sans-serif;
 	color: #ffffff;
 	font-weight: 700;
 	font-size: 20px;
