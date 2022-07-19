@@ -97,7 +97,7 @@ a img {
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 .banner-box {
-	height: 14vh;
+	height: 100%;
 	background-color: white;
 	padding:0;
 }
@@ -127,7 +127,7 @@ a img {
 	font-size: 25px;
 	font-weight: 400;
 	margin: 1%;
-	line-height: 150%;
+	line-height: 130%;
 	color: black;
 }
 .banner-text:hover {
@@ -276,9 +276,9 @@ a img {
 	.feestcharge {
 		justify-content: center;
 		margin: auto;
-		background-color: #105670;
-		box-shadow: 4px 4px #feed01;
-		color: #FEF200;
+		background-color: #951b80;
+		box-shadow: 4px 4px #feed00;
+		color: #feed00;
 	}
 .cyclop-sub-sub {
 	margin: 0 auto 2rem;
@@ -340,19 +340,19 @@ a img {
 	width: 30%;
 }
 .chargebutton {
-	background: #105670;
-	color: #feed01;
+	background: #951b80;
+	color: #feed00;
 }
 	.chargebutton:hover{
-		background: #EC1D25;
+		background: #e71873;
 	}
 	.fbutton {
 		background-color: #fff;
-		color: #EC1D25 !important;
+		color: #e71873 !important;
 	}
 	.fbutton:hover {
 		background-color: #fff200;
-		color: #EC1D25 !important;
+		color: #e71873 !important;
 	}
 .cyclop-asbl-feest-logo {
 	max-width: 200px;
@@ -661,8 +661,8 @@ a img {
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
 }
-.mdl-card {
-	background-color: #005B70;
+#feestcard {
+	background-color: #951b80;
 }
 .mdl-card__title-text {
 	font-family: 'Geo', 'Impact', sans-serif;
